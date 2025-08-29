@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erfan Nourbakhsh - Software Engineer | AI Specialist | Data Scientist</title>
+    <meta name="description" content="Portfolio of Erfan Nourbakhsh - Multi-disciplinary technology professional specializing in Software Engineering, AI, and Data Science">
+    <meta name="keywords" content="Software Engineer, AI Specialist, Data Scientist, Machine Learning, Deep Learning, Python, JavaScript, React">
+    <meta name="author" content="Erfan Nourbakhsh">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Erfan Nourbakhsh - Software Engineer | AI Specialist | Data Scientist">
+    <meta property="og:description" content="Portfolio of Erfan Nourbakhsh - Multi-disciplinary technology professional">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://erfannourbakhsh.dev">
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <div class="loading-text">EN</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Erfan Nourbakhsh</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="particle-canvas"></canvas>
+            <div class="hero-shapes">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="floating-shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Erfan Nourbakhsh</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typewriter" id="typewriter"></span>
+                </div>
+                <p class="hero-description">
+                    Passionate about creating intelligent solutions that bridge the gap between 
+                    cutting-edge AI research and real-world applications. Currently pursuing 
+                    PhD in Computer Science at UTSA.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://linkedin.com/in/erfan-nourbakhsh/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/erfan-nourbakhsh" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=dUQBu7EAAAAJ&hl=en&oi=ao" target="_blank" class="social-link">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh" target="_blank" class="social-link">
+                        <i class="fab fa-researchgate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <!-- Animated geometric shapes -->
+                    <div class="geometric-shapes">
+                        <div class="geo-shape triangle-1"></div>
+                        <div class="geo-shape circle-1"></div>
+                        <div class="geo-shape square-1"></div>
+                        <div class="geo-shape triangle-2"></div>
+                        <div class="geo-shape hexagon-1"></div>
+                    </div>
+                    
+                    <!-- Energy rings around image -->
+                    <div class="energy-rings">
+                        <div class="energy-ring ring-1"></div>
+                        <div class="energy-ring ring-2"></div>
+                        <div class="energy-ring ring-3"></div>
+                    </div>
+                    
+                    <div class="image-frame">
+                        <img src="profile.jpg" alt="Erfan Nourbakhsh" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-icon icon-1">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="floating-icon icon-4">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate technologist with a vision for intelligent solutions</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>My Journey</h3>
+                        <p>
+                            I'm a PhD student in Computer Science at the University of Texas at San Antonio, 
+                            with a strong background in Software Engineering, Artificial Intelligence, and Data Science. 
+                            My journey spans from developing full-stack applications to creating sophisticated 
+                            machine learning models and conducting cutting-edge research.
+                        </p>
+                    </div>
+                    
+                    <div class="text-block">
+                        <h3>Research Focus</h3>
+                        <p>
+                            My research interests include Machine Learning, Natural Language Processing, 
+                            Deep Learning, Scalable AI Systems, and Multimodal AI. I'm particularly passionate 
+                            about bridging the gap between theoretical AI research and practical applications 
+                            that can make a real-world impact.
+                        </p>
+                    </div>
+                    
+                    <div class="text-block">
+                        <h3>Current Work</h3>
+                        <p>
+                            Currently working as a Graduate Research Assistant at UTSA, focusing on software 
+                            accessibility improvements and cognitive load detection using advanced machine learning 
+                            techniques. I'm also actively involved in teaching and mentoring the next generation 
+                            of computer scientists.
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                <div class="about-skills">
+                    <h3>Quick Skills Overview</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                    
+                    <div class="download-cv">
+                        <a href="CV_ErfanNourbakhsh.pdf" class="btn btn-primary" id="download-cv" download>
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Comprehensive expertise across multiple technology domains</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            </div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                            </div>
+                            <span class="skill-name">C/C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            </div>
+                            <span class="skill-name">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI/ML Technologies</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                            </div>
+                            <span class="skill-name">PyTorch</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                            </div>
+                            <span class="skill-name">TensorFlow</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+                            </div>
+                            <span class="skill-name">Scikit-learn</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face">
+                            </div>
+                            <span class="skill-name">Hugging Face</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Science Tools</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                            </div>
+                            <span class="skill-name">Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                            </div>
+                            <span class="skill-name">NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib">
+                            </div>
+                            <span class="skill-name">Matplotlib</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+                            </div>
+                            <span class="skill-name">Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+                            </div>
+                            <span class="skill-name">React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                            </div>
+                            <span class="skill-name">Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                            </div>
+                            <span class="skill-name">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                            </div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            </div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                            </div>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
+                            </div>
+                            <span class="skill-name">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & Tools</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                            </div>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                            </div>
+                            <span class="skill-name">Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                            </div>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Journey through my professional growth and achievements</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-date="Aug 2025 - Present">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>University Instructor</h3>
+                                <h4>University of Texas at San Antonio (UTSA)</h4>
+                                <span class="location">San Antonio, TX</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Teaching CS 2113: Fundamentals of OOP, focusing on encapsulation, abstraction, modularity, and polymorphism</li>
+                                <li>Guiding students in problem analysis and coding solutions with Java classes and objects</li>
+                                <li>Introducing computational complexity concepts to evaluate and compare algorithm efficiency</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">Teaching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="May 2025 - Present">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Research Assistant</h3>
+                                <h4>University of Texas at San Antonio (UTSA)</h4>
+                                <span class="location">San Antonio, TX</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Enhanced software accessibility by investigating update regressions affecting blind and motor-impaired users</li>
+                                <li>Improved OSS feature requests using DFG-based code summaries and GPT-4o</li>
+                                <li>Advanced cognitive load detection using ResNet and transformer-based models on ECG signals, achieving 82.8% accuracy</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Agentic Task Automation</span>
+                            <span class="tech-tag">ResNet</span>
+                            <span class="tech-tag">Cognitive Load</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">GPT Models</span>
+                            <span class="tech-tag">Code Summarization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Jun 2024 - Oct 2024">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Artificial Intelligence Specialist</h3>
+                                <h4>Directam</h4>
+                                <span class="location">Isfahan</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Integrated AI models into applications, improving scalability and reducing deployment issues</li>
+                                <li>Developed NLP-driven systems to analyze Telegram interactions, enhancing customer feedback analysis</li>
+                                <li>Built AI solutions: Persian Car ASR, Instagram Comment Generator, and OCR-based Fortune Wheel Recognition</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">ASR</span>
+                            <span class="tech-tag">OCR</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Aug 2024 - Sep 2024">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Artificial Intelligence Strategy Consultant</h3>
+                                <h4>Pezeshke Khoob</h4>
+                                <span class="location">Tehran</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Guided AI-focused data preparation and analysis, reducing processing time.</li>
+                                <li>Designed recommender systems, improving customer engagement.</li>
+                                <li>Aligned predictive modeling with strategic decision-making.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Data Preparation & Analytical Optimization</span>
+                            <span class="tech-tag">Predictive Modeling & Machine Learning</span>
+                            <span class="tech-tag">Strategic AI Consulting & Business Alignment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Sep 2023 - Dec 2024">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Graduate Research Assistant</h3>
+                                <h4>University of Isfahan</h4>
+                                <span class="location">Isfahan</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Designed a low-code platform to automatically generate chatbots, reducing manual development effort.</li>
+                                <li>Automated chatbot creation from user-provided designs, improving accessibility and usability.</li>
+                                <li>Built chatbots across multiple categories using LLMs.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Chatbots</span>
+                            <span class="tech-tag">Low-code Development</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">React.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Mar 2023 - Sep 2023">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Machine Learning Engineer</h3>
+                                <h4>Eftekhar Modiran</h4>
+                                <span class="location">Isfahan</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Developed EftekharTalent, an ML and deep learning powered system for job search and candidate matching</li>
+                                <li>Collaborated with psychology and management teams to integrate personality tests into matching algorithms</li>
+                                <li>Optimized PyTorch neural networks, improving matching accuracy significantly</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Neural Networks</span>
+                            <span class="tech-tag">Recommendation Systems</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Nov 2022 - Feb 2024">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Undergraduate Research Assistant</h3>
+                                <h4>University of Isfahan</h4>
+                                <span class="location">Isfahan</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Built a document summarization system combining GNNs with BiLSTM and CNN models.</li>
+                                <li>Applied Graph Attention Networks (GATs) to update semantic relationships.</li>
+                                <li>Designed a summarization classifier to select the most informative sentences.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Graph Neural Networks</span>
+                            <span class="tech-tag">Graph Attention Networks</span>
+                            <span class="tech-tag">Deep Learning Model Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Jul 2021 - Jan 2022">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Frontend Developer</h3>
+                                <h4>VITRACO-IR</h4>
+                                <span class="location">Isfahan</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Implemented garage management panel with React.js frontend and Laravel backend</li>
+                                <li>Developed React Native mobile application for cargo and truck logistics</li>
+                                <li>Built recommendation system using PyTorch and scikit-learn for load-driver matching</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="Jan 2021 - Oct 2021">
+                    <div class="timeline-content">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3>Frontend Developer</h3>
+                                <h4>Safir</h4>
+                                <span class="location">Isfahan</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Developed multiple CSR and SSR projects using React.js and Next.js</li>
+                                <li>Collaborated effectively with project managers to maintain project timelines</li>
+                                <li>Implemented TypeScript for better code quality and maintainability</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SSR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Internship Experience</h2>
+                <p class="section-subtitle">Building foundational skills through hands-on experience</p>
+            </div>
+            
+            <div class="internships-grid">
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="internship-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="internship-period">
+                            <span class="period-badge">Jul 2021 - Sep 2021</span>
+                        </div>
+                    </div>
+                    <div class="internship-content">
+                        <h3 class="internship-title">Machine Learning Intern</h3>
+                        <h4 class="company-name">Vitraco</h4>
+                        <div class="internship-description">
+                            <ul>
+                                <li>Built a recommendation system with PyTorch and scikit-learn to match loads with drivers.</li>
+                                <li>Applied NLP and data mining to analyze driver feedback.</li>
+                                <li>Refined recommendation algorithms with real-world data, improving assignment accuracy.</li>
+                            </ul>
+                        </div>
+                        <div class="internship-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Data Mining</span>
+                            <span class="tech-tag">Recommendation Systems</span>
+                        </div>
+                    </div>
+                    <div class="internship-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Improved Assignment Accuracy</span>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="internship-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="internship-period">
+                            <span class="period-badge">Aug 2020 - Jan 2021</span>
+                        </div>
+                    </div>
+                    <div class="internship-content">
+                        <h3 class="internship-title">Frontend Developer Intern</h3>
+                        <h4 class="company-name">Safir</h4>
+                        <div class="internship-description">
+                            <ul>
+                                <li>Designed and implemented Digipie with ReactJS and TypeScript, streamlining content evaluation.</li>
+                                <li>Developed CSR and SSR applications, maintaining quality standards.</li>
+                                <li>Optimized Digipie's design, improving employee adoption and workflow efficiency.</li>
+                            </ul>
+                        </div>
+                        <div class="internship-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SSR</span>
+                            <span class="tech-tag">CSR</span>
+                            <span class="tech-tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="internship-highlight">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Enhanced Workflow Efficiency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions across AI, ML, and Software Development</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="web-dev">Web Development</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- ConHGNN-SUM Project -->
+                <div class="project-card" data-category="ai-ml research">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/ConHGNN-SUM" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ConHGNN-SUM</h3>
+                        <p class="project-description">
+                            Contextualized Heterogeneous Graph Neural Network for extractive document summarization (AISP 2024). 
+                            Treats documents as word–sentence heterogeneous graphs with TF-IDF edges, multi-kernel CNN n-grams, BiLSTM encoding, 
+                            and GAT refinement with iterative message passing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">DGL</span>
+                            <span class="tech-tag">Graph Neural Networks</span>
+                            <span class="tech-tag">BiLSTM</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">GAT</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-star"></i>
+                                Published
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                Open Source
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LinguaFlow Project -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/LinguaFlow" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">LinguaFlow</h3>
+                        <p class="project-description">
+                            Multilingual text-processing toolkit with end-to-end preprocessing in Jupyter. 
+                            Features normalization, tokenization, lemmatization, stopwords removal, spell checking, and word-cloud visualization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Hazm</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Persian NLP</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-language"></i>
+                                Multilingual
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-tools"></i>
+                                Toolkit
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SocketSync Project -->
+                <div class="project-card" data-category="web-dev">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/SocketSync" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SocketSync</h3>
+                        <p class="project-description">
+                            Real-time multi-client platform with React UI and Node.js/Express backend over Socket.IO, persisting to MS SQL Server. 
+                            Supports multi-tenant data entry, live sync, in-app chat, and server-side analytics engine.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.IO</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MS SQL Server</span>
+                            <span class="tech-tag">Material-UI</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-plug"></i>
+                                Real-time
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-users"></i>
+                                Multi-client
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MatrixForge Project -->
+                <div class="project-card" data-category="research">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/MatrixForge" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MatrixForge</h3>
+                        <p class="project-description">
+                            VHDL coprocessor for 3×3 matrix multiplication with column-by-column MAC pipeline. 
+                            Features Register File, Processing Unit with multiply-accumulate, FSM Control Unit, and minimal ISA.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VHDL</span>
+                            <span class="tech-tag">FPGA</span>
+                            <span class="tech-tag">MAC Pipeline</span>
+                            <span class="tech-tag">FSM</span>
+                            <span class="tech-tag">Xilinx ISE</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-microchip"></i>
+                                Hardware Design
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-clock"></i>
+                                ~10 cycles
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AlgoML-Collection Project -->
+                <div class="project-card" data-category="ai-ml data-science">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/AlgoML-Collection" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AlgoML-Collection</h3>
+                        <p class="project-description">
+                            Hands-on scikit-learn implementations covering supervised & unsupervised algorithms with real datasets. 
+                            Features SVM, Logistic Regression, KNN, Decision Trees, K-Means, Hierarchical clustering, and DBSCAN.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">KNN</span>
+                            <span class="tech-tag">K-Means</span>
+                            <span class="tech-tag">DBSCAN</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                Educational
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-chart-pie"></i>
+                                Algorithms
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elite Player Suite Project -->
+                <div class="project-card" data-category="web-dev">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/Elite-Player-Suite" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Elite Player Suite</h3>
+                        <p class="project-description">
+                            PyQt6 desktop app for FIFA player management on SQLite with MVC structure. 
+                            Features sortable table view, multi-criteria search & filters, rating slider, and polished UX.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyQt6</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">MVC</span>
+                            <span class="tech-tag">Desktop App</span>
+                            <span class="tech-tag">FIFA Data</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-desktop"></i>
+                                Desktop GUI
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-futbol"></i>
+                                Sports Data
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RecSys Intelligence Hub Project -->
+                <div class="project-card" data-category="ai-ml data-science">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/RecSys-Intelligence-Hub" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RecSys Intelligence Hub</h3>
+                        <p class="project-description">
+                            End-to-end recommender systems with Collaborative Filtering, Content-Based, and Hybrid approaches. 
+                            Uses MovieLens (34k movies, 4M+ ratings) and Amazon reviews with comprehensive evaluation metrics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Collaborative Filtering</span>
+                            <span class="tech-tag">Content-Based</span>
+                            <span class="tech-tag">MovieLens</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Pearson</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-star"></i>
+                                4M+ Ratings
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-layer-group"></i>
+                                Hybrid System
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ClothInsight Analytics Project -->
+                <div class="project-card" data-category="data-science">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/ClothInsight-Analytics" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ClothInsight Analytics</h3>
+                        <p class="project-description">
+                            Retail feedback mining over 82,791 clothing-store reviews to extract insights on sizing, fit, quality, and satisfaction. 
+                            Features comprehensive EDA, data quality audits, and business-facing visualizations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Text Mining</span>
+                            <span class="tech-tag">EDA</span>
+                            <span class="tech-tag">Business Intelligence</span>
+                            <span class="tech-tag">Retail Analytics</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-shopping-bag"></i>
+                                82k+ Reviews
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-chart-line"></i>
+                                Business Intelligence
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EazyShop Project -->
+                <div class="project-card" data-category="full-stack">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/erfan-nourbakhsh/EazyShop" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EazyShop</h3>
+                        <p class="project-description">
+                            Full-stack MERN e-commerce application delivering a polished buyer journey and operational admin back office. 
+                            Features faceted product browsing, Stripe checkout, order tracking, inventory CRUD with Cloudinary uploads, 
+                            and comprehensive admin dashboard with sales analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React 18</span>
+                            <span class="tech-tag">Redux Toolkit</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-store"></i>
+                                E-commerce
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-credit-card"></i>
+                                Stripe Integration
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="https://github.com/erfan-nourbakhsh" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    <span>View All Projects on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-subtitle">Academic excellence and continuous learning journey</p>
+            </div>
+            
+            <div class="education-content">
+                <!-- Education -->
+                <div class="education-section">
+                    <h3 class="subsection-title">Education</h3>
+                    <div class="education-grid">
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-info">
+                                <h4>Doctor of Philosophy - PhD</h4>
+                                <h5>Computer Science</h5>
+                                <p class="institution">University of Texas at San Antonio (UTSA)</p>
+                                <p class="duration">2025 - 2029</p>
+                                <p class="gpa">GPA: 4.0/4.0</p>
+                                <div class="education-details">
+                                    <p>Focus on Machine Learning, Software Engineering, and Natural Language Processing</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="education-info">
+                                <h4>Bachelor's Degree</h4>
+                                <h5>Computer Engineering</h5>
+                                <p class="institution">University of Isfahan</p>
+                                <p class="duration">2019 - 2023</p>
+                                <p class="gpa">GPA: 3.7/4.0</p>
+                                <div class="education-details">
+                                    <p>Graduated in top 10 students. Thesis: "ConHGNN-SUM: Contextualized Heterogeneous Graph Neural Networks for Extractive Document Summarization" (GPA: 4.0/4.0)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications-section">
+                    <h3 class="subsection-title">Recent Certifications</h3>
+                    <div class="certifications-grid">
+                        <a href="https://coursera.org/share/4246159b9361749dd69d55320815d871" class="cert-card-link" target="_blank">
+                            <div class="cert-card">
+                                <div class="cert-provider">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="provider-logo">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Google AI Essentials</h4>
+                                    <p class="cert-issuer">Google</p>
+                                    <p class="cert-date">August 2025</p>
+                                    <div class="cert-link-indicator">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://cdn-uploads.huggingface.co/production/uploads/noauth/B95oe7F2OIF3H7wP6w-0p.webp" class="cert-card-link" target="_blank">
+                            <div class="cert-card">
+                                <div class="cert-provider">
+                                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" class="provider-logo">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Fine-tuning Language Models</h4>
+                                    <p class="cert-issuer">Hugging Face</p>
+                                    <p class="cert-date">July 2025</p>
+                                    <div class="cert-link-indicator">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/Erfan-Nourbakhsh/2025-05-21.png" class="cert-card-link" target="_blank">
+                            <div class="cert-card">
+                                <div class="cert-provider">
+                                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" class="provider-logo">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AI Agents Fundamentals</h4>
+                                    <p class="cert-issuer">Hugging Face</p>
+                                    <p class="cert-date">May 2025</p>
+                                    <div class="cert-link-indicator">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/S2B3KSP9XPMJ" class="cert-card-link" target="_blank">
+                            <div class="cert-card">
+                                <div class="cert-provider">
+                                    <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Deep Learning Specialization</h4>
+                                    <p class="cert-issuer">DeepLearning.AI</p>
+                                    <p class="cert-date">October 2023</p>
+                                    <div class="cert-link-indicator">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/53P7JTZXHT83" class="cert-card-link" target="_blank">
+                            <div class="cert-card">
+                                <div class="cert-provider">
+                                    <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Generative AI with LLMs</h4>
+                                    <p class="cert-issuer">DeepLearning.AI</p>
+                                    <p class="cert-date">September 2023</p>
+                                    <div class="cert-link-indicator">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.credly.com/badges/f7559ef6-f993-44ce-91e2-0b01eaf3038c/public_url" class="cert-card-link" target="_blank">
+                            <div class="cert-card">
+                                <div class="cert-provider">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="provider-logo">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>GitHub Copilot Challenge</h4>
+                                    <p class="cert-issuer">Microsoft</p>
+                                    <p class="cert-date">July 2025</p>
+                                    <div class="cert-link-indicator">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Expand Button -->
+                    <div class="cert-expand-section">
+                        <button class="cert-expand-btn" onclick="toggleAllCertifications()">
+                            <span class="expand-text">View All Certifications</span>
+                            <i class="fas fa-chevron-down expand-icon"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- All Certifications (Hidden by default) -->
+                    <div class="all-certifications" id="allCertifications">
+                        <h4 class="all-cert-title">Complete Certification Portfolio</h4>
+                        <div class="all-cert-grid">
+                            <!-- 2025 Certifications -->
+                            <a href="https://coursera.org/share/4246159b9361749dd69d55320815d871" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Google AI Essentials</h4>
+                                        <p class="cert-issuer">Google</p>
+                                        <p class="cert-date">August 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://badgr.com/public/assertions/LnRWYxPUQJygVD3KSYvIEQ" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="utsa.png" alt="UTSA" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Roadrunner Teaching Assistantship Academy 2025</h4>
+                                        <p class="cert-issuer">UTSA Academic Innovation</p>
+                                        <p class="cert-date">August 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://cdn-uploads.huggingface.co/production/uploads/noauth/B95oe7F2OIF3H7wP6w-0p.webp" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Fine-tuning Language Models</h4>
+                                        <p class="cert-issuer">Hugging Face</p>
+                                        <p class="cert-date">July 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://cdn-uploads.huggingface.co/production/uploads/noauth/mGgg_J7pGKA3bXkUuHrha.webp" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Fundamentals of LLMs</h4>
+                                        <p class="cert-issuer">Hugging Face</p>
+                                        <p class="cert-date">July 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.credly.com/badges/f7559ef6-f993-44ce-91e2-0b01eaf3038c/public_url" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>GitHub Copilot Challenge</h4>
+                                        <p class="cert-issuer">Microsoft</p>
+                                        <p class="cert-date">July 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://drive.google.com/file/d/1OdN-slW3fjMKP2cfsVQNn376j9CaAxyj/view?usp=sharing" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="utsa.png" alt="UTSA" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Teaching Philosophy Workshop</h4>
+                                        <p class="cert-issuer">The University of Texas at San Antonio</p>
+                                        <p class="cert-date">June 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href=https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/Erfan-Nourbakhsh/2025-05-21.png#" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>AI Agents Fundamentals</h4>
+                                        <p class="cert-issuer">Hugging Face</p>
+                                        <p class="cert-date">May 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.credly.com/badges/c6c64b57-b2a6-40f1-8af3-1428183a4ddc/linked_in_profile" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="utsa.png" alt="UTSA" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>MATRIX AI Scholar: Neuro-Inspired AI for the Edge</h4>
+                                        <p class="cert-issuer">The University of Texas at San Antonio</p>
+                                        <p class="cert-date">April 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://drive.google.com/file/d/1JqTJYCqApV8FsaAFLLS8xZoi5qmSl_XA/view?usp=sharing" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="utsa.png" alt="UTSA" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Phishing Foundations</h4>
+                                        <p class="cert-issuer">The University of Texas at San Antonio</p>
+                                        <p class="cert-date">March 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://drive.google.com/file/d/1egWiaDn37oD4mZ02rIns2IhMIDK2EZjl/view?usp=sharing" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="Springer_Nature.png" alt="Springer Nature" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Maximising the Impact of Your Paper</h4>
+                                        <p class="cert-issuer">Springer Nature</p>
+                                        <p class="cert-date">February 2025</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <!-- 2024 Certifications -->
+                            <a href="https://drive.google.com/file/d/1dGnKDXOcFOmtk2ld8TCKTPjv3sFcSuZ_/view?usp=sharing" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="sharif.png" alt="Sharif University" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>9th Winter Seminar Series (WSS)</h4>
+                                        <p class="cert-issuer">Sharif University of Technology</p>
+                                        <p class="cert-date">February 2024</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <!-- 2023 Certifications -->
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/S2B3KSP9XPMJ" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Deep Learning Specialization</h4>
+                                        <p class="cert-issuer">DeepLearning.AI</p>
+                                        <p class="cert-date">October 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://ielts.org/" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="ielts.png" alt="IELTS" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>IELTS</h4>
+                                        <p class="cert-issuer">IELTS Official</p>
+                                        <p class="cert-date">October 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/3RQYFXBJMU9U" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>AI and Public Health</h4>
+                                        <p class="cert-issuer">DeepLearning.AI</p>
+                                        <p class="cert-date">September 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/53P7JTZXHT83" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Generative AI with Large Language Models</h4>
+                                        <p class="cert-issuer">DeepLearning.AI</p>
+                                        <p class="cert-date">September 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.udemy.com/certificate/UC-5b53f9f1-9744-42ce-ab31-897fbb9035e7/" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="udemy.png" alt="Udemy" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Supercharge Productivity: ChatGPT & Prompt Engineering</h4>
+                                        <p class="cert-issuer">Udemy</p>
+                                        <p class="cert-date">June 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.cloudskillsboost.google/public_profiles/094bd489-d47f-4bce-903c-92d180c07e67/badges/3826083" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="google-logo.png" alt="Google" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Introduction to Generative AI</h4>
+                                        <p class="cert-issuer">Google Cloud</p>
+                                        <p class="cert-date">June 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.cloudskillsboost.google/public_profiles/094bd489-d47f-4bce-903c-92d180c07e67/badges/3826399" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="google-logo.png" alt="Google" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Introduction to Large Language Models</h4>
+                                        <p class="cert-issuer">Google Cloud</p>
+                                        <p class="cert-date">June 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.udemy.com/certificate/UC-deedd345-1e3b-4239-8e7d-08dbb6c25ab0/" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="udemy.png" alt="Udemy" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Learn Machine Learning & AI (Including Hands-on 3 Projects)</h4>
+                                        <p class="cert-issuer">EdYoda Digital University</p>
+                                        <p class="cert-date">June 2023</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <!-- 2022 Certifications -->
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/UJ9FBQ98PCRU" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Supervised Machine Learning: Regression and Classification</h4>
+                                        <p class="cert-issuer">DeepLearning.AI</p>
+                                        <p class="cert-date">September 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/CDBWHPHXM26M" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Agile Software Development</h4>
+                                        <p class="cert-issuer">University of Minnesota</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/PSVWKKNSP7AU" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Engineering Practices for Building Quality Software</h4>
+                                        <p class="cert-issuer">University of Minnesota</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://drive.google.com/file/d/1oN0jBLF4YvO5RsK3gRSznHZ3qDiZ2mnd/view" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Foundations: Data, Data, Everywhere</h4>
+                                        <p class="cert-issuer">Google</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/2EE7AM2C3UY5" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Fundamentals of Network Communication</h4>
+                                        <p class="cert-issuer">University of Colorado</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/U2P8QSGJ6ZL5" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>HTML, CSS, and Javascript for Web Developers</h4>
+                                        <p class="cert-issuer">Johns Hopkins University</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/629J6L8M3UPL" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Lean Software Development</h4>
+                                        <p class="cert-issuer">University of Minnesota</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://drive.google.com/file/d/1bqET7tB5_U7cQDyrY2SLcrsoM5T5CMXz/view" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Machine Learning with Python</h4>
+                                        <p class="cert-issuer">IBM Skills Network</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/WQF4NZLXVXBA" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Object-Oriented Design</h4>
+                                        <p class="cert-issuer">University of Alberta</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5XA9BPSUCN67" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Software Development Lifecycle</h4>
+                                        <p class="cert-issuer">University of Minnesota</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/QX24ZM6K3LYN" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Software Development Processes and Methodologies</h4>
+                                        <p class="cert-issuer">University of Minnesota</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/SU9R53YU56N3" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Using Python to Access Web Data</h4>
+                                        <p class="cert-issuer">University of Michigan</p>
+                                        <p class="cert-date">July 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/7ENTHMRTZ9T8" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="coursera.png" alt="Coursera" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Front-End Web Development with React</h4>
+                                        <p class="cert-issuer">The Hong Kong University of Science and Technology</p>
+                                        <p class="cert-date">February 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="https://drive.google.com/file/d/1ct_o1LL7mF-5JnXgepTju6sMLCw-6wT4/view" class="cert-card-link" target="_blank">
+                                <div class="cert-card">
+                                    <div class="cert-provider">
+                                        <img src="sololearn.png" alt="Sololearn" class="provider-logo">
+                                    </div>
+                                    <div class="cert-info">
+                                        <h4>Python Core</h4>
+                                        <p class="cert-issuer">SoloLearn</p>
+                                        <p class="cert-date">February 2022</p>
+                                        <div class="cert-link-indicator">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honors & Awards -->
+                <div class="honors-section">
+                    <h3 class="subsection-title">Honors & Awards</h3>
+                    <div class="honors-list">
+                        <div class="honor-item">
+                            <div class="honor-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="honor-content">
+                                <h4>ComSciCon Houston 2025 Selection</h4>
+                                <p>Selected from over 250 applicants for science communication workshop</p>
+                                <span class="honor-date">April 2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="honor-item">
+                            <div class="honor-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="honor-content">
+                                <h4>TOP PhD Applicant - UTSA</h4>
+                                <p>Selected as top PhD applicant for CS program at UTSA</p>
+                                <span class="honor-date">February 2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="honor-item">
+                            <div class="honor-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="honor-content">
+                                <h4>Top 10 Academic Performance</h4>
+                                <p>Ranked among top 10 students in Computer Engineering department</p>
+                                <span class="honor-date">January 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="honor-item">
+                            <div class="honor-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="honor-content">
+                                <h4>Honorary Admission</h4>
+                                <p>Exceptional talent admission to AI graduate program</p>
+                                <span class="honor-date">January 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate on innovative projects and research opportunities</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>erfan.nourbakhsh@my.utsa.edu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>210-606-1804</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>San Antonio, TX, USA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Availability</h4>
+                            <p>Open to research collaborations and opportunities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Connect with me</h4>
+                        <div class="social-grid">
+                            <a href="https://linkedin.com/in/erfan-nourbakhsh/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/erfan-nourbakhsh" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=dUQBu7EAAAAJ&hl=en&oi=ao" target="_blank" class="social-link">
+                                <i class="fab fa-google"></i>
+                                <span>Google Scholar</span>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh" target="_blank" class="social-link">
+                                <i class="fab fa-researchgate"></i>
+                                <span>ResearchGate</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Research Collaboration</option>
+                                <option value="opportunity">Job Opportunity</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="consulting">Consulting Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">Erfan Nourbakhsh</span>
+                    </div>
+                    <p class="footer-description">
+                        Software Engineer | AI Specialist | Data Scientist<br>
+                        Building intelligent solutions for tomorrow's challenges
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Portfolio</h4>
+                        <a href="#projects">Projects</a>
+                        <a href="#education">Education</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="https://linkedin.com/in/erfan-nourbakhsh/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/erfan-nourbakhsh" target="_blank">GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=dUQBu7EAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Erfan Nourbakhsh. All rights reserved.</p>
+                <p>Designed with passion and innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
