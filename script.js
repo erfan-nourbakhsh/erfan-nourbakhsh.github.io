@@ -490,6 +490,13 @@ class ContactForm {
         this.form = document.getElementById('contact-form');
         this.submitBtn = this.form.querySelector('.submit-btn');
         
+        // EmailJS configuration
+        this.emailjsConfig = {
+            serviceID: 'service_wmfzdqo',
+            templateID: 'template_mwyb11j',
+            publicKey: 'nHiGMiHoy_9Dy5CWt'
+        };
+        
         this.init();
     }
     
@@ -576,12 +583,13 @@ class ContactForm {
         this.submitBtn.disabled = true;
         
         try {
-            // Simulate form submission (replace with actual endpoint)
-            await this.simulateSubmission(data);
+            // Send email using EmailJS
+            await this.sendEmail(data);
             
             this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
             this.form.reset();
         } catch (error) {
+            console.error('Email sending failed:', error);
             this.showNotification('Failed to send message. Please try again.', 'error');
         } finally {
             this.submitBtn.classList.remove('loading');
@@ -589,14 +597,32 @@ class ContactForm {
         }
     }
     
-    async simulateSubmission(data) {
-        // Simulate network delay
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                console.log('Form data:', data);
-                resolve();
-            }, 2000);
-        });
+    async sendEmail(data) {
+        // Initialize EmailJS if not already done
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init(this.emailjsConfig.publicKey);
+        } else {
+            throw new Error('EmailJS not loaded');
+        }
+        
+        // Prepare template parameters
+        const templateParams = {
+            from_name: data.name,
+            from_email: data.email,
+            subject: data.subject,
+            message: data.message,
+            to_name: 'Erfan Nourbakhsh',
+            to_email: 'erfan.nourbakhsh@my.utsa.edu'
+        };
+        
+        // Send email via EmailJS
+        const response = await emailjs.send(
+            this.emailjsConfig.serviceID,
+            this.emailjsConfig.templateID,
+            templateParams
+        );
+        
+        return response;
     }
     
     showNotification(message, type) {
