@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFFDYYFBEG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XFFDYYFBEG');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erfan Nourbakhsh | Publications</title>
+<meta name="description" content="Publications by Erfan Nourbakhsh — Ph.D. student in Computer Science at UTSA. Papers in NLP, biomedical informatics, graph neural networks, and AI for education.">
+<meta name="keywords" content="Erfan Nourbakhsh, Publications, NLP, ACL, BioNLP, GEM, IEEE, Research Papers, UTSA">
+<meta name="author" content="Erfan Nourbakhsh">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://erfannourbakhsh.dev/publications">
+<link rel="icon" type="image/png" href="../assets/images/logo.png">
+<link rel="apple-touch-icon" href="../assets/images/logo.png">
+<meta property="og:title" content="Erfan Nourbakhsh | Publications">
+<meta property="og:description" content="Research publications by Erfan Nourbakhsh in NLP, biomedical informatics, and AI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://erfannourbakhsh.dev/publications">
+<meta property="og:image" content="https://erfannourbakhsh.dev/assets/images/logo.png">
+<meta property="og:site_name" content="Erfan Nourbakhsh">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Erfan Nourbakhsh | Publications">
+<meta name="twitter:description" content="Research publications by Erfan Nourbakhsh in NLP, biomedical informatics, and AI.">
+<meta name="twitter:image" content="https://erfannourbakhsh.dev/assets/images/logo.png">
+<meta name="theme-color" content="#7b1e2b">
+<link rel="stylesheet" href="../assets/css/nav.css">
+
+<style>
+
+:root {
+    --primary: #7b1e2b;
+    --primary-light: #f6e9eb;
+    --shadow: rgba(0, 0, 0, 0.06);
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    background: #ffffff;
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1.5px solid var(--primary);
+    transition: all 0.25s ease;
+}
+
+.social-link img {
+    width: 16px;
+    height: 16px;
+}
+
+.social-link:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.pub-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow);
+    margin-bottom: 20px;
+    border-left: 5px solid var(--primary);
+    transition: transform 0.2s ease;
+}
+
+.pub-content {
+    flex: 1;
+}
+
+.pub-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.pub-authors {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.pub-venue {
+    font-size: 14px;
+    font-style: italic;
+    margin: 5px 0;
+    color: #333;
+}
+
+.pub-doi {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #444;
+}
+
+.pub-doi a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.pub-doi a:hover {
+    text-decoration: underline;
+}
+
+.pub-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.pub-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.pub-btn-paper {
+    width: 110px;
+    background: linear-gradient(135deg, var(--primary) 0%, #5a1520 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(123, 30, 43, 0.35);
+}
+
+.pub-btn-paper:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(123, 30, 43, 0.45);
+}
+
+.pub-btn-github,
+.pub-btn-huggingface {
+    width: 158px;
+}
+
+.pub-btn-github {
+    background: #ffffff;
+    color: #24292f;
+    border: 2px solid #24292f;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pub-btn-github:hover {
+    background: #24292f;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.pub-btn-github.is-unavailable {
+    opacity: 0.45;
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: #aaa;
+    color: #888;
+    box-shadow: none;
+}
+
+.pub-btn-huggingface {
+    background: #fffdf0;
+    color: #ff9d0b;
+    border: 2px solid #ffd21e;
+    box-shadow: 0 3px 10px rgba(255, 210, 30, 0.25);
+}
+
+.pub-btn-huggingface:hover {
+    background: #ffd21e;
+    color: #3a3b45;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 210, 30, 0.35);
+}
+
+.pub-btn svg,
+.pub-btn img {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.pub-abstract {
+    margin-top: 14px;
+    border: 1px solid #e8dde0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #faf8f9;
+}
+
+.pub-abstract summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    transition: background 0.2s ease;
+}
+
+.pub-abstract summary::-webkit-details-marker {
+    display: none;
+}
+
+.pub-abstract summary::after {
+    content: "+";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--primary);
+    transition: transform 0.25s ease;
+}
+
+.pub-abstract[open] summary {
+    background: var(--primary-light);
+    border-bottom: 1px solid #e8dde0;
+}
+
+.pub-abstract[open] summary::after {
+    content: "−";
+}
+
+.pub-abstract p {
+    margin: 0;
+    padding: 14px 16px 16px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #222;
+    text-align: justify;
+}
+
+.pub-bibtex {
+    margin-top: 10px;
+    border: 1px solid #e8dde0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #faf8f9;
+}
+
+.pub-bibtex summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    transition: background 0.2s ease;
+}
+
+.pub-bibtex summary::-webkit-details-marker {
+    display: none;
+}
+
+.pub-bibtex summary::after {
+    content: "+";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--primary);
+}
+
+.pub-bibtex[open] summary {
+    background: var(--primary-light);
+    border-bottom: 1px solid #e8dde0;
+}
+
+.pub-bibtex[open] summary::after {
+    content: "−";
+}
+
+.pub-bibtex-inner {
+    padding: 12px 16px 16px;
+}
+
+.pub-bibtex-code {
+    position: relative;
+}
+
+.pub-copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    color: var(--primary);
+    background: #ffffff;
+    border: 1.5px solid var(--primary);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.pub-copy-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+.pub-copy-btn:hover {
+    background: var(--primary);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.pub-copy-btn.copied {
+    background: #155724;
+    border-color: #155724;
+    color: #ffffff;
+}
+
+.pub-bibtex pre {
+    margin: 0;
+    padding: 12px 38px 12px 12px;
+    background: var(--primary-light);
+    color: #1a1a1a;
+    border: 1px solid #e0c8cc;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.pub-bibtex code {
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.badge-published { background: #d4edda; color: #155724; }
+.badge-accepted { background: #dbeafe; color: #1e40af; }
+.badge-submitted { background: #fff3cd; color: #856404; }
+.badge-preparation { background: #e2e3e5; color: #383d41; }
+
+@media(max-width: 1046px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer {
+    margin-top: 80px;
+    background: #ffffff;
+    border-top: 2px solid var(--primary);
+    padding: 30px 0;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer-left strong {
+    color: var(--primary);
+    font-size: 15px;
+}
+
+.footer-right a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-updated {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer-updated span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+@media(max-width: 1046px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar" aria-label="Main navigation">
+    <div class="nav-shell">
+        <a href="/" class="nav-brand-logo-link"><img src="../assets/images/logo.png" alt=""></a>
+        <a href="/" class="nav-brand-name">Erfan Nourbakhsh</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu" aria-label="Open navigation menu">
+            <span class="hamburger-box" aria-hidden="true">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="site-nav-menu" class="nav-menu">
+            <a href="/" class="nav-logo" aria-label="Erfan Nourbakhsh home"><img src="../assets/images/logo.png" alt=""></a>
+            <div class="nav-backdrop" aria-hidden="true"></div>
+            <aside class="nav-drawer">
+                <div class="nav-drawer-header">
+                    <p class="nav-drawer-label">Navigate</p>
+                    <button type="button" class="nav-close" aria-label="Close menu">&times;</button>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/"><span class="nav-num">01</span> About</a></li>
+                    <li><a href="/publications" class="active"><span class="nav-num">02</span> Publications</a></li>
+                    <li><a href="/teaching"><span class="nav-num">03</span> Teaching</a></li>
+                    <li><a href="/awards"><span class="nav-num">04</span> Awards</a></li>
+                    <li><a href="/grants"><span class="nav-num">05</span> Certifications</a></li>
+                    <li><a href="/projects"><span class="nav-num">06</span> Projects</a></li>
+                    <li><a href="/services"><span class="nav-num">07</span> Skills</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    
+    <div id="about" class="header">
+        <div class="profile-left">
+            <img src="../assets/images/output-image.png" alt="Erfan Nourbakhsh" class="profile-img">
+            <div class="social-links">
+                <a class="social-link" href="https://scholar.google.com/citations?user=dUQBu7EAAAAJ&hl=en" target="_blank">
+                    <img src="../assets/images/icons/scholar.png" alt="Scholar Icon"> Scholar
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/erfan-nourbakhsh/" target="_blank">
+                    <img src="../assets/images/icons/linkedin.png" alt="LinkedIn Icon"> LinkedIn
+                </a>
+                <a class="social-link" href="https://github.com/erfan-nourbakhsh" target="_blank">
+                    <img src="../assets/images/icons/github.png" alt="GitHub Icon"> GitHub
+                </a>
+                <a class="social-link" href="https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh" target="_blank">
+                    <img src="../assets/images/icons/researchgate.png" alt="ResearchGate Icon"> ResearchGate
+                </a>
+                <a class="social-link" href="https://orcid.org/0009-0009-0777-1805" target="_blank">
+                    <img src="../assets/images/icons/orcid.png" alt="ORCID Icon"> ORCID
+                </a>
+                <a class="social-link" href="mailto:erfan.nourbakhsh@utsa.edu">
+                    <img src="../assets/images/icons/email.png" alt="Email Icon"> Email
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="section">
+        <h2>Publications</h2>
+
+        <div style="margin-bottom: 8px; font-size:13px; color:#555; text-align:center;">
+            For complete and updated citation metrics, please visit my
+            <a href="https://scholar.google.com/citations?user=dUQBu7EAAAAJ&hl=en" target="_blank"
+               style="color:var(--primary); font-weight:600; text-decoration:none;">Google Scholar profile</a>.
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    Are LLM Benchmarks Already Contaminated? A Systematic Review of Contamination Detection Methods
+                    <span class="status-badge badge-accepted">Accepted</span>
+                </div>
+                <div class="pub-authors"><strong>E Nourbakhsh</strong>, MS Sirjani, A Mousavi, K Nguyen, J Quarles, M Xie, R Slavin</div>
+                <div class="pub-venue">GEM Workshop — The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026) &nbsp;|&nbsp; <strong>Oral Paper</strong></div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.12579.41764" target="_blank" rel="noopener">10.13140/RG.2.2.12579.41764</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh/publication/405741359_Are_LLM_Benchmarks_Already_Contaminated_A_Systematic_Review_of_Contamination_Detection_Methods/links/6a1f2496cda78712cc3a3ead/Are-LLM-Benchmarks-Already-Contaminated-A-Systematic-Review-of-Contamination-Detection-Methods.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Large Language Models (LLMs) are trained on web-scale corpora, increasing the risk that benchmark test data appears in training sets and inflates reported performance. We present a systematic literature review of 55 studies on LLM benchmark contamination through late 2025. Our contributions are: (1) a four-tier contamination taxonomy (Exact, Syntactic, Semantic, Task-Level; T1–T4); (2) a comparative analysis of five detection families (string-matching, likelihood-based, membership inference, LLM-prompted detection, and benchmark auditing), including access assumptions and failure modes; (3) a synthesis of contamination evidence on MMLU, GSM8K, HumanEval, and HellaSwag by measurement construct; (4) a comparative evaluation of mitigation strategies across lifecycle points, access assumptions, and evidence maturity; and (5) a Contamination Transparency Card (CTC) framework for future releases. Across studies, no detection method is consistently reliable across contamination tiers, model-access settings, and training stages. We identify instruction tuning as a persistent blind spot, note that RL/post-training contamination auditing is only beginning to mature, and report inflation estimates spanning roughly 6%–40% under benchmark- and setting-dependent assumptions.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@article{erfan2026contamination,
+  author = {Nourbakhsh, Erfan and Sirjani, Mohammad Sadegh and Mousavi, Amir and Nguyen, Khoa and Quarles, John and Xie, Mimi and Slavin, Rocky},
+  year = {2026},
+  month = {06},
+  title = {Are LLM Benchmarks Already Contaminated? A Systematic Review of Contamination Detection Methods},
+  doi = {10.13140/RG.2.2.12579.41764},
+  url = {https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh/publication/405741359_Are_LLM_Benchmarks_Already_Contaminated_A_Systematic_Review_of_Contamination_Detection_Methods/links/6a1f2496cda78712cc3a3ead/Are-LLM-Benchmarks-Already-Contaminated-A-Systematic-Review-of-Contamination-Detection-Methods.pdf},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    When Retrieval Doesn't Help: A Large-Scale Study of Biomedical RAG
+                    <span class="status-badge badge-accepted">Accepted</span>
+                </div>
+                <div class="pub-authors"><strong>E Nourbakhsh</strong>, R Slavin, K Yang, A Rios</div>
+                <div class="pub-venue">BioNLP Workshop — The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.2606.04127" target="_blank" rel="noopener">10.48550/arXiv.2606.04127</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://arxiv.org/abs/2606.04127" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <a class="pub-btn pub-btn-github" href="https://github.com/erfan-nourbakhsh/BioMedicalRAG" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Medical question answering is a high-stakes setting where factual errors can have serious consequences. Retrieval-augmented generation (RAG) is widely viewed as a promising solution, and prior work has reported substantial gains for large medical QA models. We revisit this assumption across a broad range of open-weight instruction-tuned models spanning 7B to 72B parameters. Across five models, ten biomedical QA datasets, four retrieval methods, and four retrieval corpora, we find that retrieval yields only small and inconsistent improvements over a no-retrieval baseline, typically within 1-2 points. In contrast, the choice of backbone model has a much larger effect than the choice of retriever or corpus, and expert and layman retrieval sources perform similarly in most settings. These results suggest that the main bottleneck is not retrieval quality alone, but the model's limited ability to use retrieved evidence effectively.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@misc{nourbakhsh2026retrievaldoesnthelplargescale,
+      title={When Retrieval Doesn't Help: A Large-Scale Study of Biomedical RAG},
+      author={Erfan Nourbakhsh and Rocky Slavin and Ke Yang and Anthony Rios},
+      year={2026},
+      eprint={2606.04127},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.04127},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    MambaGaze: Bidirectional Mamba with Explicit Missing Data Modeling for Cognitive Load Assessment from Eye-Gaze Tracking Data
+                    <span class="status-badge badge-submitted">Under Review</span>
+                </div>
+                <div class="pub-authors">A Mousavi, MS Sirjani, <strong>E Nourbakhsh</strong>, M Xie, R Slavin, L Neely, J Davis, J Quarles</div>
+                <div class="pub-venue">IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI 2026)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.2605.22775" target="_blank" rel="noopener">10.48550/arXiv.2605.22775</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://arxiv.org/abs/2605.22775" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <span class="pub-btn pub-btn-github is-unavailable"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub(Soon)</span>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@misc{mousavi2026mambagazebidirectionalmambaexplicit,
+      title={MambaGaze: Bidirectional Mamba with Explicit Missing Data Modeling for Cognitive Load Assessment from Eye-Gaze Tracking Data},
+      author={Amir Mousavi and Mohammad Sadegh Sirjani and Erfan Nourbakhsh and Mimi Xie and Rocky Slavin and Leslie Neely and John Davis and John Quarles},
+      year={2026},
+      eprint={2605.22775},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.22775},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    CogAdapt: Transferring Clinical ECG Foundation Models to Wearable Cognitive Load Assessment via Lead Adaptation
+                    <span class="status-badge badge-submitted">Under Review</span>
+                </div>
+                <div class="pub-authors">A Mousavi, <strong>E Nourbakhsh</strong>, MS Sirjani, M Xie, R Slavin, L Neely, J Davis, J Quarles</div>
+                <div class="pub-venue">IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI 2026)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.2605.22774" target="_blank" rel="noopener">10.48550/arXiv.2605.22774</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://arxiv.org/abs/2605.22774" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <span class="pub-btn pub-btn-github is-unavailable"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub(Soon)</span>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Real-time cognitive load assessment is essential for adaptive human-computer interaction but remains challenging due to limited labeled data and poor cross-subject generalization. Recent ECG foundation models pre-trained on millions of clinical recordings offer rich representations, but cannot be directly applied to wearable devices due to sensor configuration mismatch and task differences. In this paper, we propose CogAdapt, a framework that adapts clinical ECG foundation models to wearable cognitive load assessment. CogAdapt introduces LeadBridge, a learnable adapter that transforms 3-lead wearable signals into anatomically consistent 12-lead representations, and ProFine, a progressive fine-tuning strategy that gradually unfreezes encoder layers while preventing catastrophic forgetting. Evaluations on two public datasets (CLARE and CL-Drive) under leave-one-subject-out cross-validation show that CogAdapt substantially outperforms baselines trained from scratch, achieving macro-F1 scores of 0.626 and 0.768. These results demonstrate the promise of foundation model adaptation for subject-independent cognitive load assessment from wearable sensors.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@misc{mousavi2026cogadapttransferringclinicalecg,
+      title={CogAdapt: Transferring Clinical ECG Foundation Models to Wearable Cognitive Load Assessment via Lead Adaptation},
+      author={Amir Mousavi and Erfan Nourbakhsh and Mohammad Sadegh Sirjani and Mimi Xie and Rocky Slavin and Leslie Neely and John Davis and John Quarles},
+      year={2026},
+      eprint={2605.22774},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.22774},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    Prompting Underestimates LLM Capability for Time Series Classification
+                    <span class="status-badge badge-submitted">Under Review</span>
+                </div>
+                <div class="pub-authors">D Schumacher, <strong>E Nourbakhsh</strong>, R Slavin, A Rios</div>
+                <div class="pub-venue">The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.2601.03464" target="_blank" rel="noopener">10.48550/arXiv.2601.03464</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://arxiv.org/abs/2601.03464" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <span class="pub-btn pub-btn-github is-unavailable"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub(Soon)</span>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Prompt-based evaluations suggest that large language models (LLMs) perform poorly on time series classification, raising doubts about whether they encode meaningful temporal structure. We show that this conclusion reflects limitations of prompt-based generation rather than the model's representational capacity by directly comparing prompt outputs with linear probes over the same internal representations. While zero-shot prompting performs near chance, linear probes improve average F1 from 0.15-0.26 to 0.61-0.67, often matching or exceeding specialized time series models. Layer-wise analyses further show that class-discriminative time series information emerges in early transformer layers and is amplified by visual and multimodal inputs. Together, these results demonstrate a systematic mismatch between what LLMs internally represent and what prompt-based evaluation reveals, leading current evaluations to underestimate their time series understanding.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@misc{schumacher2026promptingunderestimatesllmcapability,
+      title={Prompting Underestimates LLM Capability for Time Series Classification},
+      author={Dan Schumacher and Erfan Nourbakhsh and Rocky Slavin and Anthony Rios},
+      year={2026},
+      eprint={2601.03464},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.03464},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    Optimizing Task Scheduling in Fog Computing with Deadline Awareness
+                    <span class="status-badge badge-published">Published</span>
+                </div>
+                <div class="pub-authors">MS Sirjani, M Ahmad, A Mousavi, <strong>E Nourbakhsh</strong>, K Nguyen</div>
+                <div class="pub-venue">2026 IEEE 2nd International Conference on Secure IoT, Assured and Trusted Computing (SATC)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.1109/SATC69565.2026.11542230" target="_blank" rel="noopener">10.1109/SATC69565.2026.11542230</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://ieeexplore.ieee.org/document/11542230" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>The rise of Internet of Things (IoT) devices has led to the development of numerous time-sensitive applications that require quick responses and low latency. Fog computing has emerged as a solution for processing these IoT applications, but it faces challenges such as resource allocation and job scheduling. Therefore, it is crucial to determine how to assign and schedule tasks on Fog nodes. This work aims to schedule tasks in IoT while minimizing the total energy consumption of nodes and enhancing the Quality of Service (QoS) requirements of IoT tasks, taking into account task deadlines. This paper classifies Fog nodes into two categories based on their traffic level: low and high. It schedules short-deadline tasks on low-traffic nodes using an Improved Golden Eagle Optimization (IGEO) algorithm, an enhancement that utilizes genetic operators for discretization. Long-deadline tasks are processed on high-traffic nodes using reinforcement learning (RL). This combined approach is called the Reinforcement Improved Golden Eagle Optimization (RIGEO) algorithm. Experimental results demonstrate that RIGEO achieves up to a 29% reduction in energy consumption, up to an 86% improvement in response time, and up to a 19% reduction in deadline violations compared to state-of-the-art algorithms.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@INPROCEEDINGS{11542230,
+  author={Sirjani, Mohammad Sadegh and Ahmad, Mohammad and Mousavi, Amir and Nourbakhsh, Erfan and Nguyen, Khoa},
+  booktitle={2026 IEEE 2nd International Conference on Secure IoT, Assured and Trusted Computing (SATC)},
+  title={Optimizing Task Scheduling in Fog Computing with Deadline Awareness},
+  year={2026},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Internet of Things;Timing;Schedules;Scheduling;Optimization;Equations;Energy consumption;Algorithms;Tagging;Printing;Internet of Things;Fog Computing;Job Scheduling;Golden Eagle Optimization Algorithm;Reinforcement Learning},
+  doi={10.1109/SATC69565.2026.11542230}
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    Unveiling User Perceptions in the Generative AI Era: A Sentiment-Driven Evaluation of AI Educational Apps' Role in Digital Transformation of e-Teaching
+                    <span class="status-badge badge-accepted">Accepted</span>
+                </div>
+                <div class="pub-authors">A Mazaherian, <strong>E Nourbakhsh</strong></div>
+                <div class="pub-venue">The 19th National and the 13th International Conference on e-Learning and e-Teaching (ICeLeT 2026) &nbsp;|&nbsp; <strong>Oral Paper</strong></div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.2512.11934" target="_blank" rel="noopener">10.48550/arXiv.2512.11934</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://arxiv.org/abs/2512.11934" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <a class="pub-btn pub-btn-github" href="https://github.com/erfan-nourbakhsh/GenAI-EdSent" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                    <a class="pub-btn pub-btn-huggingface" href="https://huggingface.co/datasets/Erfan-Nourbakhsh/GenAI-EdSent" target="_blank" rel="noopener"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" aria-hidden="true" width="15" height="15"> Hugging Face</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>The rapid integration of generative artificial intelligence into education has driven digital transformation in e-teaching, yet user perceptions of AI educational apps remain underexplored. This study performs a sentiment-driven evaluation of user reviews from top AI ed-apps on the Google Play Store to assess efficacy, challenges, and pedagogical implications. Our pipeline involved scraping app data and reviews, RoBERTa for binary sentiment classification, GPT-4o for key point extraction, and GPT-5 for synthesizing top positive/negative themes. Apps were categorized into seven types (e.g., homework helpers, math solvers, language tools), with overlaps reflecting multifunctional designs. Results indicate predominantly positive sentiments, with homework apps like Edu AI (95.9% positive) and Answer.AI (92.7%) leading in accuracy, speed, and personalization, while language/LMS apps (e.g., Teacher AI at 21.8% positive) lag due to instability and limited features. Positives emphasize efficiency in brainstorming, problem-solving, and engagement; negatives center on paywalls, inaccuracies, ads, and glitches. Trends show that homework helpers outperform specialized tools, highlighting AI's democratizing potential amid risks of dependency and inequity. The discussion proposes future ecosystems with hybrid AI-human models, VR/AR for immersive learning, and a roadmap for developers (adaptive personalization) and policymakers (monetization regulation for inclusivity). This underscores generative AI's role in advancing e-teaching by enabling ethical refinements that foster equitable, innovative environments.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@misc{mazaherian2025unveilinguserperceptionsgenerative,
+      title={Unveiling User Perceptions in the Generative AI Era: A Sentiment-Driven Evaluation of AI Educational Apps' Role in Digital Transformation of e-Teaching},
+      author={Adeleh Mazaherian and Erfan Nourbakhsh},
+      year={2025},
+      eprint={2512.11934},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2512.11934},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    KD-OCT: Efficient Knowledge Distillation for Clinical-Grade Retinal OCT Classification
+                    <span class="status-badge badge-published">Published</span>
+                </div>
+                <div class="pub-authors"><strong>E Nourbakhsh</strong>, N Sanjari, A Nourbakhsh</div>
+                <div class="pub-venue">2025 11th International Conference on Signal Processing and Intelligent Systems (ICSPIS) &nbsp;|&nbsp; <strong>Oral Paper</strong></div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.1109/ICSPIS68676.2025.11551784" target="_blank" rel="noopener">10.1109/ICSPIS68676.2025.11551784</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://ieeexplore.ieee.org/document/11551784" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <a class="pub-btn pub-btn-github" href="https://github.com/erfan-nourbakhsh/KD-OCT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                    <a class="pub-btn pub-btn-huggingface" href="https://huggingface.co/collections/Erfan-Nourbakhsh/kd-oct" target="_blank" rel="noopener"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" aria-hidden="true" width="15" height="15"> Hugging Face</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Age-related macular degeneration (AMD) and choroidal neovascularization (CNV)-related conditions are leading causes of vision loss worldwide, with optical coherence tomography (OCT) serving as a cornerstone for early detection and management. However, deploying state-of-the-art deep learning models like ConvNeXtV2-Large in clinical settings is hindered by their computational demands. Therefore, it is desirable to develop efficient models that maintain high diagnostic performance while enabling real-time deployment. In this study, a novel knowledge distillation framework, termed KD-OCT, is proposed to compress a high-performance ConvNeXtV2-Large teacher model, enhanced with advanced augmentations, stochastic weight averaging, and focal loss, into a lightweight EfficientNet-B2 student for classifying normal, drusen, and CNV cases. KD-OCT employs real-time distillation with a combined loss balancing soft teacher knowledge transfer and hard ground-truth supervision. The effectiveness of the proposed method is evaluated on the Noor Eye Hospital (NEH) dataset using patient-level cross-validation. Experimental results demonstrate that KD-OCT outperforms comparable multi-scale or feature-fusion OCT classifiers in efficiency-accuracy balance, achieving near-teacher performance with substantial reductions in model size and inference time. Despite the compression, the student model exceeds most existing frameworks, facilitating edge deployment for AMD screening.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@INPROCEEDINGS{11551784,
+  author={Nourbakhsh, Erfan and Sanjari, Nasrin and Nourbakhsh, Ali},
+  booktitle={2025 11th International Conference on Signal Processing and Intelligent Systems (ICSPIS)},
+  title={KD-OCT: Efficient Knowledge Distillation for Clinical-Grade Retinal OCT Classification},
+  year={2025},
+  volume={},
+  number={},
+  pages={605-611},
+  keywords={Modeling;Printing;Retina;Training;Labeling;Accuracy;Convolutional neural networks;Aging;Architecture;Computer architecture;Retinal OCT;Knowledge Distillation;AMD Classification;ConvNeXt;Healthcare AI;Model Compression},
+  doi={10.1109/ICSPIS68676.2025.11551784}
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    Beyond the Hype: Critical Analysis of Student Motivations and Ethical Boundaries in Educational AI Use in Higher Education
+                    <span class="status-badge badge-published">Published</span>
+                </div>
+                <div class="pub-authors">A Mazaherian, <strong>E Nourbakhsh</strong></div>
+                <div class="pub-venue">6th Congress on Education, Social and Cultural Studies with Futurist Education (ESCSSCONG06)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.2511.11369" target="_blank" rel="noopener">10.48550/arXiv.2511.11369</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://arxiv.org/abs/2511.11369" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>The rapid integration of generative artificial intelligence (AI) in higher education since 2023 has outpaced institutional preparedness, creating a persistent gap between student practices and established ethical standards. This paper draws on mixed-method surveys and a focused literature review to examine student motivations, ethical dilemmas, gendered responses, and institutional readiness for AI adoption. We find that 92% of students use AI tools primarily to save time and improve work quality, yet only 36% receive formal guidance, producing a de facto "shadow pedagogy" of unguided workflows. Notably, 18% of students reported integrating AI-constructed material into assignments, which suggests confusion about integrity expectations and compromises the integrity of the assessment. Female students expressed greater concern about abuse and distortion of information than male students, revealing a gendered difference in awareness of risk and AI literacies. Correspondingly, 72% of educators use AI, but only 14% feel at ease doing so, reflecting limited training and uneven policy responses. We argue that institutions must adopt comprehensive AI literacy programs that integrate technical skills and ethical reasoning, alongside clear AI-use policies and assessment practices that promote transparency. The paper proposes an Ethical AI Integration Model centered on literacy, gender-inclusive support, and assessment redesign to guide responsible adoption, protect academic integrity, and foster equitable educational outcomes in an AI-driven landscape.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@misc{mazaherian2025hypecriticalanalysisstudent,
+      title={Beyond the Hype: Critical Analysis of Student Motivations and Ethical Boundaries in Educational AI Use in Higher Education},
+      author={Adeleh Mazaherian and Erfan Nourbakhsh},
+      year={2025},
+      eprint={2511.11369},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2511.11369},
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-content">
+                <div class="pub-title">
+                    ConHGNN-SUM: A Contextualized Heterogeneous Graph Neural Network for Extractive Text Summarization
+                    <span class="status-badge badge-published">Published</span>
+                </div>
+                <div class="pub-authors"><strong>E Nourbakhsh</strong>, HB Kashani</div>
+                <div class="pub-venue">The 20th CSI International Symposium on Artificial Intelligence and Signal Processing (AISP 2024)</div>
+                <div class="pub-doi">DOI: <a href="https://doi.org/10.1109/aisp61396.2024.10475307" target="_blank" rel="noopener">10.1109/AISP61396.2024.10475307</a></div>
+                <div class="pub-actions">
+                    <a class="pub-btn pub-btn-paper" href="https://ieeexplore.ieee.org/document/10475307" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Paper</a>
+                    <a class="pub-btn pub-btn-github" href="https://github.com/erfan-nourbakhsh/ConHGNN-SUM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 1.005-.315 3.3 1.23 3.3 1.23a9.192 9.192 0 0 1 2.46-.33c.84 0 1.68.114 2.46.33 0 0 2.295-1.545 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                </div>
+                <details class="pub-abstract">
+                    <summary>Abstract</summary>
+                    <p>Text summarization is a valuable method for extracting important details from large volumes of text data, facilitating tasks like text data analysis. Various text summarization techniques have been developed over time, with some focusing on selecting and summarizing short sentences, while others overlook the semantic relationship between sentences. Extractive document summarization involves learning cross-sentence relations, a critical aspect that has been extensively explored using various approaches. One effective method is to employ neural networks based on graphs, which offer an intricate structure capable of obtaining relations among sentences. In this paper, we present a contextualized heterogeneous graph neural network for extractive text summarization (ConHGNN-SUM), incorporating semantic nodes that extend beyond individual sentences, and emphasizes the importance of capturing the relationship between selected sentences as a final step in the summarization process. These extra nodes function as intermediaries connecting sentences and enhancing the interrelationships between them. Our model enhances conventional graph-based extractive methods and delivers comparable performance to other advanced systems for extractive summarization.</p>
+                </details>
+                <details class="pub-bibtex">
+                    <summary>BibTeX</summary>
+                    <div class="pub-bibtex-inner">
+                        <div class="pub-bibtex-code">
+                        <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+                        <pre><code>@INPROCEEDINGS{10475307,
+  author={Nourbakhsh, Seyed Erfan and Kashani, Hamidreza Baradaran},
+  booktitle={2024 20th CSI International Symposium on Artificial Intelligence and Signal Processing (AISP)},
+  title={ConHGNN-SUM: A Contextualized Heterogeneous Graph Neural Network for Extractive Text Summarization},
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Data analysis;Semantics;Focusing;Signal processing;Graph neural networks;Data mining;Task analysis;Extractive Text Summarization;Graph Neural Networks;Natural Language Processing(NLP)},
+  doi={10.1109/AISP61396.2024.10475307}
+}</code></pre>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <strong>Erfan Nourbakhsh</strong><br>
+            University of Texas at San Antonio
+        </div>
+        <div class="footer-right">
+            <div>📧 <a href="mailto:erfan.nourbakhsh@utsa.edu">erfan.nourbakhsh@utsa.edu</a></div>
+            <div style="margin-top:6px;">
+                Department of Computer Science<br>
+                UTSA, San Antonio, TX 78249
+            </div>
+        </div>
+    </div>
+    <div class="footer-updated">Last updated: <span>26 Jun 2026</span></div>
+</footer>
+
+<script>
+var copyIconSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
+var checkIconSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>';
+
+document.querySelectorAll('.pub-copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        var pre = btn.parentElement.querySelector('pre');
+        if (!pre) return;
+        var text = pre.textContent;
+        var onSuccess = function () {
+            btn.innerHTML = checkIconSvg;
+            btn.classList.add('copied');
+            btn.setAttribute('aria-label', 'Copied');
+            btn.setAttribute('title', 'Copied');
+            setTimeout(function () {
+                btn.innerHTML = copyIconSvg;
+                btn.classList.remove('copied');
+                btn.setAttribute('aria-label', 'Copy BibTeX');
+                btn.setAttribute('title', 'Copy BibTeX');
+            }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(onSuccess).catch(function () {
+                fallbackCopy(text, onSuccess);
+            });
+        } else {
+            fallbackCopy(text, onSuccess);
+        }
+    });
+});
+function fallbackCopy(text, onSuccess) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+        document.execCommand('copy');
+        onSuccess();
+    } catch (e) {}
+    document.body.removeChild(ta);
+}
+</script>
+
+<script src="../assets/js/nav.js"></script>
+</body>
+</html>
