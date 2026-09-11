@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/business",
+      "destination": "/business/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/:page",
+      "destination": "/:page",
+      "permanent": true
+    },
+    {
+      "source": "/:page.html",
+      "destination": "/:page",
+      "permanent": true
+    }
+  ]
+}
