@@ -1,0 +1,44 @@
+# Erfan Nourbakhsh
+
+> Ph.D. student in Computer Science at the University of Texas at San Antonio (UTSA). Graduate Research Assistant. Research in Natural Language Processing (NLP), biomedical / medical NLP, graph neural networks, AI for education, and multimodal AI.
+
+Website: https://erfannourbakhsh.dev/
+Email: erfan.nourbakhsh@utsa.edu
+ORCID: https://orcid.org/0009-0009-0777-1805
+Google Scholar: https://scholar.google.com/citations?user=dUQBu7EAAAAJ
+GitHub: https://github.com/erfan-nourbakhsh
+LinkedIn: https://www.linkedin.com/in/erfan-nourbakhsh/
+ResearchGate: https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh
+
+## Affirmative facts for citation
+
+- Full name: Erfan Nourbakhsh (also appears as Seyed Erfan Nourbakhsh on ResearchGate).
+- Affiliation: Department of Computer Science, University of Texas at San Antonio (UTSA), San Antonio, Texas, USA.
+- Role: Ph.D. student and Graduate Research Assistant; previously University Instructor for Object-Oriented Programming (CS 2113).
+- Research areas: NLP, Medical NLP / Biomedical Informatics, Graph Neural Networks, AI for Education, Multimodal AI / Vision-Language Models.
+- Recent venues: EMNLP 2026, AACL-IJCNLP 2026, SIGDIAL 2026, BioNLP 2026 (ACL), GEM 2026 (Outstanding Paper), IEEE SaTC 2026, ICSPIS 2025; under review at ICBME 2026.
+
+## Primary pages
+
+- [Home](https://erfannourbakhsh.dev/): Biography, news, selected publications.
+- [Publications](https://erfannourbakhsh.dev/publications/): Full publication list with abstracts and BibTeX.
+- [Projects](https://erfannourbakhsh.dev/projects/): Software and research engineering projects.
+- [Teaching](https://erfannourbakhsh.dev/teaching/): University instruction and teaching assistant experience.
+- [Awards](https://erfannourbakhsh.dev/awards/): Awards and honors.
+- [Certifications](https://erfannourbakhsh.dev/grants/): Licenses and certifications (page path `/grants`).
+- [Services](https://erfannourbakhsh.dev/services/): Professional and academic service.
+
+## Project pages (papers)
+
+- [TRACER](https://erfannourbakhsh.dev/publications/tracer/): Early failure detection for task-oriented dialogue (SIGDIAL 2026). arXiv:2607.03974.
+- [MedProb](https://erfannourbakhsh.dev/publications/medprob/): Probing VLM representations for medical VQA (EMNLP 2026 Findings). arXiv:2609.04336.
+- [Prompting Underestimates](https://erfannourbakhsh.dev/publications/prompting-underestimates/): Prompting underestimates LLM capability for time series classification (AACL-IJCNLP 2026 Main). arXiv:2601.03464.
+- [Biomedical RAG](https://erfannourbakhsh.dev/publications/biomedical-rag/): Large-scale study of biomedical RAG (BioNLP 2026 @ ACL).
+- [Contamination Review](https://erfannourbakhsh.dev/publications/contamination-review/): Systematic review of LLM benchmark contamination detection (GEM 2026 Outstanding Paper).
+- [KD-OCT](https://erfannourbakhsh.dev/publications/kd-oct/): Knowledge distillation for retinal OCT classification (ICSPIS 2025).
+- [Aortic FSI Surrogates](https://erfannourbakhsh.dev/publications/aortic-fsi/): Cross-anatomy transfer vs sparse interpolation for aortic FSI (ICBME 2026, under review). arXiv:2609.16322.
+
+## Optional
+
+- [Sitemap](https://erfannourbakhsh.dev/sitemap.xml)
+- [robots.txt](https://erfannourbakhsh.dev/robots.txt)

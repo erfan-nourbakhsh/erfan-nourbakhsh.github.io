@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^business$ /business/ [R=301,L]
+
+RewriteRule ^pages/(publications|teaching|awards|grants|projects|services)\.html$ /$1 [R=301,L]
+RewriteRule ^(publications|teaching|awards|grants|projects|services)\.html$ /$1 [R=301,L]
+
+DirectoryIndex index.html

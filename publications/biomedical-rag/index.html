@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="title" content="When Retrieval Doesn't Help: A Large-Scale Study of Biomedical RAG">
+  <meta name="description" content="Large-scale study of biomedical RAG across 5 models (7B-72B), 10 QA datasets, 4 retrievers, and 4 corpora. Retrieval gains are small and inconsistent; backbone choice dominates. BioNLP 2026.">
+  <meta name="keywords" content="biomedical RAG, medical QA, retrieval-augmented generation, BioNLP 2026, ACL">
+  <meta name="author" content="Erfan Nourbakhsh, Rocky Slavin, Ke Yang, Anthony Rios">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Erfan Nourbakhsh">
+  <meta property="og:title" content="When Retrieval Doesn't Help: Biomedical RAG">
+  <meta property="og:description" content="Across 5 models, 10 datasets, 4 retrievers, and 4 corpora, retrieval yields only small inconsistent gains. BioNLP 2026.">
+  <meta property="og:url" content="https://erfannourbakhsh.dev/publications/biomedical-rag">
+  <meta property="og:image" content="https://erfannourbakhsh.dev/publications/biomedical-rag/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="When Retrieval Doesn't Help: Biomedical RAG">
+  <meta name="twitter:description" content="Large-scale biomedical RAG study. Retrieval gains typically within 1-2 points. BioNLP 2026.">
+  <meta name="twitter:image" content="https://erfannourbakhsh.dev/publications/biomedical-rag/static/images/social_preview.png">
+
+  <meta name="citation_title" content="When Retrieval Doesn't Help: A Large-Scale Study of Biomedical RAG">
+  <meta name="citation_author" content="Nourbakhsh, Erfan">
+  <meta name="citation_author" content="Slavin, Rocky">
+  <meta name="citation_author" content="Yang, Ke">
+  <meta name="citation_author" content="Rios, Anthony">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="BioNLP 2026">
+  <meta name="citation_pdf_url" content="https://aclanthology.org/2026.bionlp-1.72.pdf">
+
+  <title>When Retrieval Doesn't Help | Biomedical RAG | BioNLP 2026</title>
+  <link rel="canonical" href="https://erfannourbakhsh.dev/publications/biomedical-rag">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="https://erfannourbakhsh.dev/llms.txt">
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFFDYYFBEG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XFFDYYFBEG');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "When Retrieval Doesn't Help: A Large-Scale Study of Biomedical RAG",
+  "description": "Large-scale evaluation of biomedical retrieval-augmented generation showing small and inconsistent retrieval gains across models, datasets, retrievers, and corpora.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Erfan Nourbakhsh",
+      "url": "https://erfannourbakhsh.dev/",
+      "sameAs": [
+        "https://orcid.org/0009-0009-0777-1805",
+        "https://scholar.google.com/citations?user=dUQBu7EAAAAJ&hl=en"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Rocky Slavin"
+    },
+    {
+      "@type": "Person",
+      "name": "Ke Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Anthony Rios"
+    }
+  ],
+  "datePublished": "2026",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Association for Computational Linguistics"
+  },
+  "url": "https://erfannourbakhsh.dev/publications/biomedical-rag",
+  "image": "https://erfannourbakhsh.dev/publications/biomedical-rag/static/images/social_preview.png",
+  "isAccessibleForFree": true,
+  "mainEntityOfPage": "https://erfannourbakhsh.dev/publications/biomedical-rag",
+  "inLanguage": "en",
+  "sameAs": [
+    "https://aclanthology.org/2026.bionlp-1.72/"
+  ],
+  "creator": {
+    "@id": "https://erfannourbakhsh.dev/#person"
+  }
+}
+  </script>
+
+  <style>
+    :root {
+      --ink: #0c1b2a;
+      --ink-soft: #243447;
+      --teal: #0e7c7b;
+      --teal-deep: #095958;
+      --coral: #e07a5f;
+      --gold: #b8860b;
+      --gold-bright: #d4a017;
+      --gold-soft: #f7efd6;
+      --primary: #7b1e2b;
+      --primary-light: #f8f0f1;
+      --line: rgba(12, 27, 42, 0.08);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Noto Sans", "Google Sans", sans-serif !important;
+      color: var(--ink) !important;
+      text-wrap: pretty;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(14, 124, 123, 0.08), transparent 55%),
+        radial-gradient(900px 500px at 95% 5%, rgba(212, 160, 23, 0.08), transparent 50%),
+        #fbfdff !important;
+      overflow-x: hidden;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--teal), var(--gold-bright));
+      z-index: 1000;
+      box-shadow: 0 0 12px rgba(184, 134, 11, 0.35);
+    }
+
+    .dot-nav {
+      position: fixed;
+      right: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      z-index: 40;
+    }
+    .dot-nav a {
+      width: 9px; height: 9px;
+      border-radius: 999px;
+      background: rgba(12, 27, 42, 0.18);
+      transition: transform 0.25s var(--ease), background 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    }
+    .dot-nav a.is-active,
+    .dot-nav a:hover {
+      background: var(--teal);
+      transform: scale(1.35);
+      box-shadow: 0 0 0 4px rgba(14, 124, 123, 0.15);
+    }
+
+    .hero-shell {
+      position: relative;
+      padding: 5.5rem 1.25rem 3.5rem;
+      overflow: hidden;
+    }
+    .hero-shell::before,
+    .hero-shell::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(40px);
+      pointer-events: none;
+      animation: floatOrb 10s ease-in-out infinite;
+    }
+    .hero-shell::before {
+      width: 340px; height: 340px;
+      background: rgba(14, 124, 123, 0.18);
+      top: -80px; left: -60px;
+    }
+    .hero-shell::after {
+      width: 280px; height: 280px;
+      background: rgba(212, 160, 23, 0.16);
+      right: -40px; bottom: -40px;
+      animation-delay: -4s;
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(18px) scale(1.06); }
+    }
+
+    .hero-card {
+      position: relative;
+      max-width: 920px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 1.5rem 0.5rem 0.5rem;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .venue-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.42rem 0.95rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #fff8e7 0%, var(--gold-soft) 100%);
+      color: #8a6508;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+      border: 1px solid rgba(184, 134, 11, 0.45);
+      box-shadow: 0 6px 18px rgba(184, 134, 11, 0.18);
+    }
+    .venue-badge .pulse {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--gold-bright);
+      box-shadow: 0 0 0 0 rgba(212, 160, 23, 0.55);
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      70% { box-shadow: 0 0 0 8px rgba(212, 160, 23, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(212, 160, 23, 0); }
+    }
+
+    .title-block {
+      max-width: 920px;
+      margin: 0 auto 1.15rem;
+      text-align: center;
+    }
+    .publication-title {
+      font-family: Castoro, Georgia, serif !important;
+      font-weight: 400 !important;
+      font-size: clamp(2.05rem, 4.5vw, 3.2rem) !important;
+      line-height: 1.22 !important;
+      color: var(--ink) !important;
+      margin: 0 !important;
+      max-width: none;
+      text-align: center;
+    }
+    .publication-title .title-line {
+      display: block;
+      text-wrap: balance;
+    }
+    .publication-title .accent {
+      font-style: italic;
+      color: var(--teal-deep);
+      white-space: nowrap;
+    }
+    .publication-title .title-logo {
+      display: inline-block;
+      width: 1.45em;
+      height: 1.45em;
+      object-fit: contain;
+      vertical-align: -0.28em;
+      margin-right: 0.32em;
+    }
+
+    .publication-authors {
+      font-family: "Noto Sans", "Google Sans", sans-serif !important;
+      font-size: 1.05rem !important;
+      color: var(--ink-soft) !important;
+      margin-bottom: 0.25rem !important;
+    }
+    .publication-authors a {
+      color: var(--teal-deep);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(14, 124, 123, 0.25);
+    }
+    .publication-authors a:hover {
+      color: var(--coral);
+      border-color: rgba(224, 122, 95, 0.5);
+    }
+    .publication-authors sup {
+      font-size: 0.7em;
+      color: var(--gold);
+      font-weight: 700;
+      margin-left: 1px;
+    }
+    .pub-meta {
+      color: #5a6b7c;
+      font-size: 0.98rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.55;
+    }
+    .pub-meta .affil-mark {
+      color: var(--gold);
+      font-weight: 700;
+      margin-right: 0.2rem;
+    }
+
+    .publication-links .button.is-dark {
+      background: linear-gradient(135deg, var(--ink) 0%, #16324a 100%) !important;
+      border: none !important;
+      border-radius: 999px !important;
+      padding-left: 1.15rem !important;
+      padding-right: 1.15rem !important;
+      box-shadow: 0 10px 24px rgba(12, 27, 42, 0.18) !important;
+    }
+    .publication-links .button.is-dark:hover {
+      background: linear-gradient(135deg, var(--teal-deep), var(--teal)) !important;
+      transform: translateY(-3px) !important;
+    }
+
+    /* Full-bleed section rows: no nested rectangle cards */
+    .paper-section,
+    .abstract-shell {
+      position: relative;
+      width: 100%;
+      padding: 3.6rem 1.25rem;
+      background: #ffffff;
+    }
+    .paper-section.is-alt,
+    .abstract-shell.is-alt {
+      background: #f3f7fb;
+    }
+    .paper-section::before,
+    .abstract-shell::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 5%, rgba(14,124,123,0.22), rgba(184,134,11,0.4), rgba(14,124,123,0.22), transparent 95%);
+    }
+    .paper-section .inner,
+    .abstract-shell .inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal-deep);
+      font-weight: 700;
+      margin-bottom: 0.55rem;
+    }
+    .section-kicker::before {
+      content: "";
+      width: 1.6rem;
+      height: 2px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--gold-bright));
+    }
+
+    .lede,
+    .fig-caption,
+    .table-lead,
+    .abstract-body p {
+      orphans: 3;
+      widows: 3;
+    }
+
+    .paper-section h2,
+    .abstract-shell h2,
+    #BibTeX .title {
+      font-family: Castoro, Georgia, serif !important;
+      font-weight: 400 !important;
+      font-size: clamp(1.55rem, 2.8vw, 2.05rem) !important;
+      margin-bottom: 1rem !important;
+      text-align: center;
+    }
+
+    .lede {
+      max-width: 740px;
+      margin: 0 auto 1.35rem;
+      text-align: center;
+      color: #425466;
+      line-height: 1.65;
+      font-size: 1.02rem;
+      text-wrap: pretty;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
+    .paper-figure {
+      margin: 1.4rem auto 0.5rem;
+      max-width: 640px;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .paper-figure.is-wide { max-width: 920px; }
+    .paper-figure.is-medium { max-width: 720px; }
+    .paper-figure.is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .paper-figure .frame {
+      padding: 0;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+    }
+    .paper-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: transparent;
+    }
+
+    .fig-caption,
+    .table-lead {
+      margin-top: 0.85rem;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #5a6b7c;
+      font-style: italic;
+      text-align: left;
+      max-width: 920px;
+      text-wrap: pretty;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+    .table-lead {
+      margin: 0.85rem 0 0;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--gold-bright);
+    }
+    .fig-caption {
+      padding-left: 0.75rem;
+      border-left: 3px solid rgba(14, 124, 123, 0.45);
+    }
+    .fig-caption .fig-label,
+    .table-lead .fig-label {
+      font-weight: 700;
+      font-style: normal;
+      color: var(--teal-deep);
+      letter-spacing: 0.01em;
+    }
+
+    .abstract-shell .abstract-body {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: justify;
+      text-justify: inter-word;
+      color: #334155;
+      line-height: 1.7;
+      text-wrap: pretty;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
+    /* Tables: size to content; scroll when viewport narrower (no forced cell wrap) */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 1.25rem 0 0.5rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    table.paper-table {
+      width: max-content;
+      min-width: 100%;
+      border-collapse: collapse;
+      table-layout: auto;
+      font-size: 0.78rem;
+      line-height: 1.35;
+      background: transparent;
+    }
+    table.paper-table th,
+    table.paper-table td {
+      padding: 0.42rem 0.55rem;
+      border-bottom: 1px solid rgba(12,27,42,0.1);
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    table.paper-table th {
+      font-weight: 700;
+      color: var(--ink);
+      background: rgba(14, 124, 123, 0.06);
+      text-align: center;
+    }
+    table.paper-table thead tr:first-child th:nth-child(1),
+    table.paper-table thead tr:first-child th:nth-child(2),
+    table.paper-table tbody td:nth-child(1),
+    table.paper-table tbody td:nth-child(2) {
+      text-align: left;
+    }
+    /* Metric subheaders (F1/Acc) always centered */
+    table.paper-table thead tr:nth-child(2) th {
+      text-align: center !important;
+    }
+    table.paper-table tr.group-end td {
+      border-bottom: 2.5px solid rgba(12, 27, 42, 0.35);
+    }
+    table.paper-table tr.group-end-strong td {
+      border-bottom: 3px double rgba(12, 27, 42, 0.45);
+    }
+    table.paper-table tr.pair-end td {
+      border-bottom: 1px solid rgba(12, 27, 42, 0.22);
+    }
+    table.paper-table tr.medprob {
+      background: rgba(37, 99, 235, 0.08);
+    }
+    table.paper-table .neg { color: #c0392b; font-weight: 600; }
+    table.paper-table .pos { color: #1e7a46; font-weight: 600; }
+    table.paper-table .best { font-weight: 800; }
+    table.paper-table.compact {
+      font-size: 0.85rem;
+      width: max-content;
+      min-width: 0;
+      margin: 0 auto;
+    }
+
+    /* BibTeX: not highlighted; site-style copy icon */
+    #BibTeX {
+      padding: 3rem 1.25rem 2rem;
+      background: #ffffff;
+      position: relative;
+    }
+    #BibTeX::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 5%, rgba(14,124,123,0.22), rgba(184,134,11,0.4), rgba(14,124,123,0.22), transparent 95%);
+    }
+    .bibtex-box {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .bibtex-box pre {
+      margin: 0;
+      padding: 14px 42px 14px 14px;
+      background: #f7f8fa !important;
+      color: #1a1a1a !important;
+      border: 1px solid #e5e7eb !important;
+      border-radius: 8px;
+      font-size: 12.5px;
+      line-height: 1.55;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      box-shadow: none !important;
+    }
+    .bibtex-box code {
+      font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+      background: transparent !important;
+      color: inherit !important;
+    }
+    .pub-copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      padding: 0;
+      color: var(--teal-deep);
+      background: #ffffff;
+      border: 1.5px solid var(--teal);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .pub-copy-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+    .pub-copy-btn:hover {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+    .pub-copy-btn.copied {
+      background: var(--gold-bright);
+      border-color: var(--gold);
+      color: #ffffff;
+    }
+    .bibtex-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+    .bibtex-header .copy-bibtex-btn { display: none; }
+
+    .footer {
+      background: transparent !important;
+      border-top: 1px solid var(--line);
+      padding: 2rem 1rem 2.5rem !important;
+    }
+    .footer p {
+      color: #6b7c8d;
+      font-size: 0.88rem;
+    }
+
+    .scroll-to-top {
+      background: linear-gradient(135deg, var(--teal-deep), var(--teal)) !important;
+      border: none !important;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+    }
+    .reveal.is-in {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .dot-nav { display: none; }
+      .paper-figure, .paper-figure.is-wide, .paper-figure.is-medium { max-width: 100%; }
+      .title-block { max-width: 100%; }
+      .publication-title { max-width: 100%; font-size: clamp(1.55rem, 5.2vw, 2.2rem) !important; }
+      .publication-title .title-logo {
+        width: 1.3em;
+        height: 1.3em;
+        margin-right: 0.26em;
+        vertical-align: -0.24em;
+      }
+      table.paper-table { font-size: 0.72rem; }
+    }
+
+    table.paper-table.rag-table th,
+    table.paper-table.rag-table td {
+      white-space: nowrap;
+      text-align: center !important;
+    }
+    /* Do not use nth-child: rowspan shifts indices so MCQA becomes child(2) */
+    table.paper-table.rag-table th.col-label,
+    table.paper-table.rag-table td.col-label {
+      text-align: left !important;
+    }
+    .takeaways {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+    .takeaways li {
+      position: relative;
+      padding: 0.55rem 0 0.55rem 1.15rem;
+      color: #334155;
+      line-height: 1.55;
+      border-bottom: 1px solid rgba(12,27,42,0.06);
+    }
+    .takeaways li::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 1rem;
+      width: 0.45rem; height: 0.45rem;
+      border-radius: 50%;
+      background: var(--gold-bright);
+    }
+  </style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="dot-nav" aria-label="Section navigation">
+  <a href="#hero" data-section="hero" title="Top"></a>
+  <a href="#motivation" data-section="motivation" title="Motivation"></a>
+  <a href="#abstract" data-section="abstract" title="Abstract"></a>
+  <a href="#pipeline" data-section="pipeline" title="Pipeline"></a>
+  <a href="#results" data-section="results" title="Results"></a>
+  <a href="#ablations" data-section="ablations" title="Ablations"></a>
+  <a href="#takeaways" data-section="takeaways" title="Takeaways"></a>
+</nav>
+
+<button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<section class="hero-shell" id="hero">
+  <div class="hero-card reveal">
+    <div class="venue-badge"><span class="pulse"></span> BioNLP 2026 · ACL 2026</div>
+    <div class="title-block">
+      <h1 class="title is-1 publication-title">
+        <span class="title-line">When Retrieval Doesn't Help:</span>
+        <span class="title-line">A Large-Scale Study of Biomedical RAG</span>
+      </h1>
+    </div>
+    <div class="is-size-5 publication-authors">
+      <span class="author-block"><a href="/">Erfan Nourbakhsh</a><sup>1</sup>,</span>
+      <span class="author-block">Rocky Slavin<sup>1</sup>,</span>
+      <span class="author-block">Ke Yang<sup>1</sup>,</span>
+      <span class="author-block">Anthony Rios<sup>1</sup></span>
+    </div>
+    <p class="pub-meta"><span class="affil-mark">¹</span>University of Texas at San Antonio (UTSA)</p>
+    <p class="pub-meta" style="margin-top:-0.6rem;">
+      <strong>BioNLP 2026</strong><br>
+      colocated with ACL 2026 · San Diego, California
+    </p>
+
+    <div class="publication-links">
+      <span class="link-block">
+        <a href="https://aclanthology.org/2026.bionlp-1.72/" target="_blank" rel="noopener"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Paper</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="https://arxiv.org/abs/2606.04127" target="_blank" rel="noopener"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon"><i class="ai ai-arxiv"></i></span>
+          <span>arXiv</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="https://github.com/erfan-nourbakhsh/BioMedicalRAG" target="_blank" rel="noopener"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>Code</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
+          <span class="icon"><i class="fas fa-quote-right"></i></span>
+          <span>BibTeX</span>
+        </a>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="paper-section is-alt" id="motivation">
+  <div class="inner">
+    <div class="reveal">
+      <p class="section-kicker">Introduction</p>
+      <h2>Motivation</h2>
+      <p class="lede">
+        RAG is widely assumed to help medical QA. Across models from 7B to 72B, we find only small gains, pointing to evidence use, not retrieval quality alone, as the bottleneck.
+      </p>
+    </div>
+    <div class="paper-figure is-medium">
+      <div class="frame">
+        <img src="static/images/motivation.png"
+             alt="Overview of motivation: retrieval yields only small gains across model scales.">
+      </div>
+      <p class="fig-caption">
+        <span class="fig-label">Figure 1.</span>
+        Overview of our motivation and main finding: across models from 7B to 72B, retrieval yields only small gains, suggesting that the main bottleneck is evidence use rather than retrieval quality.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="abstract-shell" id="abstract">
+  <div class="inner reveal">
+    <p class="section-kicker">Paper</p>
+    <h2 class="title is-3">Abstract</h2>
+    <div class="abstract-body">
+    <p>
+      Medical question answering is a high-stakes setting where factual errors can have serious consequences.
+      Retrieval-augmented generation (RAG) is widely viewed as a promising solution, and prior work has reported substantial gains for large medical QA models.
+      We revisit this assumption across a broad range of open-weight instruction-tuned models spanning 7B to 72B parameters.
+      Across five models, ten biomedical QA datasets, four retrieval methods, and four retrieval corpora, we find that retrieval yields only small and inconsistent improvements over a no-retrieval baseline, typically within 1-2 points.
+      In contrast, the choice of backbone model has a much larger effect than the choice of retriever or corpus, and expert and layman retrieval sources perform similarly in most settings.
+      These results suggest that the main bottleneck is not retrieval quality alone, but the model's limited ability to use retrieved evidence effectively.
+      Code is available at <a href="https://github.com/erfan-nourbakhsh/BioMedicalRAG" target="_blank" rel="noopener">github.com/erfan-nourbakhsh/BioMedicalRAG</a>.
+    </p>
+    </div>
+  </div>
+</section>
+
+<section class="paper-section is-alt" id="pipeline">
+  <div class="inner">
+    <div class="reveal">
+      <p class="section-kicker">Experiments</p>
+      <h2>Experimental Pipeline</h2>
+      <p class="lede">
+        Five open-weight models (7B-72B), ten expert/layman QA datasets, four retrievers (BM25, TF-IDF, MedCPT, Hybrid RRF), and four corpora (BioASQ/PubMed, Medical Textbooks, Yahoo Answers, HealthCareMagic).
+      </p>
+    </div>
+    <div class="paper-figure is-wide">
+      <div class="frame">
+        <img src="static/images/method.png"
+             alt="Experimental pipeline overview for biomedical RAG evaluation.">
+      </div>
+      <p class="fig-caption">
+        <span class="fig-label">Figure 2.</span>
+        Experimental pipeline overview.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="paper-section" id="results">
+  <div class="inner">
+    <div class="reveal">
+      <p class="section-kicker">Results</p>
+      <h2>Retrieval Helps Little</h2>
+      <p class="lede">
+        On close-ended medical QA, retrieval often hurts smaller models and gives at most ~1-2 points for larger ones. Backbone choice dominates retriever and corpus choice.
+      </p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="paper-table rag-table">
+        <thead>
+          <tr>
+            <th class="col-label">Model</th>
+            <th class="col-label">Data</th>
+            <th>MCQA</th>
+            <th>MQA</th>
+            <th>MMLU</th>
+            <th>Avg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-label" rowspan="5">LLaMA3.1-8B</td><td class="col-label">w/o RAG</td><td class="best">80.8</td><td>83.8</td><td class="best">83.7</td><td class="best">82.8</td></tr>
+          <tr><td class="col-label">BioASQ</td><td>75.9</td><td class="best">84.6</td><td>82.3</td><td>80.9</td></tr>
+          <tr><td class="col-label">HCM</td><td>73.7</td><td>84.2</td><td>74.0</td><td>77.3</td></tr>
+          <tr><td class="col-label">Textbook</td><td>74.1</td><td>84.1</td><td>83.3</td><td>80.5</td></tr>
+          <tr class="group-end"><td class="col-label">Yahoo</td><td>74.6</td><td>83.7</td><td>81.5</td><td>79.9</td></tr>
+          <tr><td class="col-label" rowspan="5">LLaMA3.1-70B</td><td class="col-label">w/o RAG</td><td class="best">81.0</td><td>89.1</td><td>89.2</td><td>86.4</td></tr>
+          <tr><td class="col-label">BioASQ</td><td>79.8</td><td>90.8</td><td class="best">90.2</td><td class="best">86.9</td></tr>
+          <tr><td class="col-label">HCM</td><td>78.9</td><td>80.5</td><td>87.5</td><td>82.3</td></tr>
+          <tr><td class="col-label">Textbook</td><td>80.2</td><td>81.1</td><td>89.5</td><td>83.6</td></tr>
+          <tr class="group-end"><td class="col-label">Yahoo</td><td>79.1</td><td class="best">91.7</td><td>88.7</td><td>86.5</td></tr>
+          <tr><td class="col-label" rowspan="5">Mistral-7B</td><td class="col-label">w/o RAG</td><td class="best">72.6</td><td class="best">77.9</td><td class="best">76.7</td><td class="best">75.7</td></tr>
+          <tr><td class="col-label">BioASQ</td><td>61.3</td><td>72.4</td><td>72.2</td><td>68.6</td></tr>
+          <tr><td class="col-label">HCM</td><td>63.3</td><td>73.2</td><td>72.0</td><td>69.5</td></tr>
+          <tr><td class="col-label">Textbook</td><td>66.0</td><td>73.7</td><td>77.3</td><td>72.3</td></tr>
+          <tr class="group-end"><td class="col-label">Yahoo</td><td>65.5</td><td>74.0</td><td>74.2</td><td>71.2</td></tr>
+          <tr><td class="col-label" rowspan="5">Qwen2.5-7B</td><td class="col-label">w/o RAG</td><td class="best">80.0</td><td class="best">83.7</td><td class="best">86.3</td><td class="best">83.3</td></tr>
+          <tr><td class="col-label">BioASQ</td><td>75.8</td><td>81.1</td><td>82.2</td><td>79.7</td></tr>
+          <tr><td class="col-label">HCM</td><td>74.9</td><td>81.4</td><td>82.8</td><td>79.7</td></tr>
+          <tr><td class="col-label">Textbook</td><td>76.6</td><td>81.1</td><td>85.7</td><td>81.1</td></tr>
+          <tr class="group-end"><td class="col-label">Yahoo</td><td>77.5</td><td>81.4</td><td>85.2</td><td>81.4</td></tr>
+          <tr><td class="col-label" rowspan="5">Qwen2.5-72B</td><td class="col-label">w/o RAG</td><td class="best">82.5</td><td>81.9</td><td class="best">92.5</td><td class="best">85.6</td></tr>
+          <tr><td class="col-label">BioASQ</td><td>80.1</td><td>81.6</td><td>91.2</td><td>84.3</td></tr>
+          <tr><td class="col-label">HCM</td><td>77.3</td><td class="best">85.8</td><td>90.7</td><td>84.6</td></tr>
+          <tr><td class="col-label">Textbook</td><td>80.1</td><td>83.5</td><td>91.2</td><td>84.9</td></tr>
+          <tr><td class="col-label">Yahoo</td><td>79.8</td><td>81.8</td><td>90.5</td><td>84.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fig-caption reveal">
+      <span class="fig-label">Table 1.</span>
+      Accuracy by model and retrieval corpus. MCQA denotes MedMCQA, MQA denotes MedQA, and HCM denotes HealthCareMagic. Bold: best per model column block.
+    </p>
+  </div>
+</section>
+
+<section class="paper-section is-alt" id="ablations">
+  <div class="inner">
+    <div class="reveal">
+      <p class="section-kicker">Ablations</p>
+      <h2>Shots and Top-k</h2>
+      <p class="lede">
+        Few-shot count and retrieval depth (top-k) do not overturn the main finding: gains stay small across close- and open-ended settings.
+      </p>
+    </div>
+
+    <div class="paper-figure is-medium">
+      <div class="frame">
+        <img src="static/images/close-few-shot.png"
+             alt="Close-ended accuracy across shot counts 1, 3, 5, 10.">
+      </div>
+      <p class="fig-caption">
+        <span class="fig-label">Figure 3.</span>
+        Close-ended accuracy across shot counts (1, 3, 5, 10).
+      </p>
+    </div>
+
+    <div class="paper-figure is-medium" style="margin-top:2.2rem;">
+      <div class="frame">
+        <img src="static/images/open-few-shot-main.png"
+             alt="Open-ended ROUGE-L across shot counts 1, 3, 5, 10.">
+      </div>
+      <p class="fig-caption">
+        <span class="fig-label">Figure 4.</span>
+        Open-ended ROUGE-L across shot counts (1, 3, 5, 10).
+      </p>
+    </div>
+
+    <div class="paper-figure is-wide" style="margin-top:2.2rem;">
+      <div class="frame">
+        <img src="static/images/close-k-value.png"
+             alt="Close-ended accuracy across top-k values.">
+      </div>
+      <p class="fig-caption">
+        <span class="fig-label">Figure 5.</span>
+        Close-ended accuracy across top-k (1, 3, 5, 10, 25, 50).
+      </p>
+    </div>
+
+    <div class="paper-figure is-medium" style="margin-top:2.2rem;">
+      <div class="frame">
+        <img src="static/images/open-k-value-main.png"
+             alt="Open-ended ROUGE-L across top-k values.">
+      </div>
+      <p class="fig-caption">
+        <span class="fig-label">Figure 6.</span>
+        Open-ended ROUGE-L across top-k values.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="paper-section" id="takeaways">
+  <div class="inner">
+    <div class="reveal">
+      <p class="section-kicker">Conclusion</p>
+      <h2>Main Takeaways</h2>
+    </div>
+    <ul class="takeaways reveal">
+      <li>Retrieval gains over no-RAG are small and inconsistent, typically within 1-2 points across metrics.</li>
+      <li>Backbone model choice matters far more than retriever or corpus choice.</li>
+      <li>Expert and layman retrieval corpora perform similarly in most settings.</li>
+      <li>For smaller models, retrieval often hurts close-ended accuracy relative to no retrieval.</li>
+      <li>Main bottleneck is evidence use by the generator, not retrieval quality alone.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header reveal">
+      <h2 class="title">BibTeX</h2>
+    </div>
+    <div class="bibtex-box">
+      <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+      <pre id="bibtex-code"><code>@inproceedings{nourbakhsh-etal-2026-retrieval,
+    title = "When Retrieval Doesn{'}t Help: A Large-Scale Study of Biomedical {RAG}",
+    author = "Nourbakhsh, Erfan  and
+      Slavin, Rocky  and
+      Yang, Ke  and
+      Rios, Anthony",
+    booktitle = "{B}io{NLP} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.bionlp-1.72/",
+    doi = "10.18653/v1/2026.bionlp-1.72",
+    pages = "890--910",
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Built with the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>
+            (from <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a>).
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const progress = document.getElementById('progressBar');
+  const figures = document.querySelectorAll('.paper-figure');
+  const reveals = document.querySelectorAll('.reveal');
+  const dots = document.querySelectorAll('.dot-nav a');
+  const sections = [...dots].map(d => document.getElementById(d.dataset.section)).filter(Boolean);
+
+  function onScroll() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+    if (progress) progress.style.width = pct + '%';
+
+    let active = sections[0];
+    for (const s of sections) {
+      if (s.getBoundingClientRect().top <= window.innerHeight * 0.35) active = s;
+    }
+    dots.forEach(d => d.classList.toggle('is-active', active && d.dataset.section === active.id));
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('is-in');
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  figures.forEach(el => io.observe(el));
+  reveals.forEach(el => io.observe(el));
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  var copyIconSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
+  var checkIconSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>';
+  document.querySelectorAll('.pub-copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var pre = btn.parentElement.querySelector('pre');
+      if (!pre) return;
+      var text = pre.textContent;
+      var onSuccess = function () {
+        btn.innerHTML = checkIconSvg;
+        btn.classList.add('copied');
+        btn.setAttribute('aria-label', 'Copied');
+        btn.setAttribute('title', 'Copied');
+        setTimeout(function () {
+          btn.innerHTML = copyIconSvg;
+          btn.classList.remove('copied');
+          btn.setAttribute('aria-label', 'Copy BibTeX');
+          btn.setAttribute('title', 'Copy BibTeX');
+        }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(onSuccess).catch(function () {
+          var ta = document.createElement('textarea');
+          ta.value = text; document.body.appendChild(ta); ta.select();
+          document.execCommand('copy'); document.body.removeChild(ta); onSuccess();
+        });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta); onSuccess();
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
