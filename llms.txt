@@ -30,6 +30,7 @@ ResearchGate: https://www.researchgate.net/profile/Seyed-Erfan-Nourbakhsh
 
 ## Project pages (papers)
 
+- [CogAdapt](https://erfannourbakhsh.dev/publications/cogadapt/): Adapting clinical ECG foundation models for wearable cognitive load assessment (IEEE EMBS BHI 2026). arXiv:2605.22774.
 - [TRACER](https://erfannourbakhsh.dev/publications/tracer/): Early failure detection for task-oriented dialogue (SIGDIAL 2026). arXiv:2607.03974.
 - [MedProb](https://erfannourbakhsh.dev/publications/medprob/): Probing VLM representations for medical VQA (EMNLP 2026 Findings). arXiv:2609.04336.
 - [Prompting Underestimates](https://erfannourbakhsh.dev/publications/prompting-underestimates/): Prompting underestimates LLM capability for time series classification (AACL-IJCNLP 2026 Main). arXiv:2601.03464.
