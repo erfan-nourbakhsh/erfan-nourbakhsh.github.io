@@ -29,8 +29,10 @@
   <meta name="citation_author" content="Yang, Ke">
   <meta name="citation_author" content="Rios, Anthony">
   <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="EMNLP 2026 Findings">
-  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2609.04336.pdf">
+  <meta name="citation_conference_title" content="Findings of the Association for Computational Linguistics: EMNLP 2026">
+  <meta name="citation_pdf_url" content="https://aclanthology.org/2026.findings-emnlp.1320.pdf">
+  <meta name="citation_firstpage" content="27961">
+  <meta name="citation_lastpage" content="27999">
 
   <title>MedProb | Probing VLMs for Medical Question Answering</title>
   <link rel="canonical" href="https://erfannourbakhsh.dev/publications/medprob">
@@ -83,28 +85,30 @@
   "datePublished": "2026",
   "publisher": {
     "@type": "Organization",
-    "name": "EMNLP 2026 Findings"
+    "name": "Association for Computational Linguistics"
   },
   "url": "https://erfannourbakhsh.dev/publications/medprob",
   "image": "https://erfannourbakhsh.dev/publications/medprob/static/images/social_preview.png",
   "isAccessibleForFree": true,
   "mainEntityOfPage": "https://erfannourbakhsh.dev/publications/medprob",
   "inLanguage": "en",
+  "pagination": "27961-27999",
   "identifier": [
+    {
+      "@type": "PropertyValue",
+      "name": "ACL Anthology",
+      "value": "2026.findings-emnlp.1320",
+      "url": "https://aclanthology.org/2026.findings-emnlp.1320/"
+    },
     {
       "@type": "PropertyValue",
       "name": "arXiv",
       "value": "2609.04336",
       "url": "https://arxiv.org/abs/2609.04336"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "DOI",
-      "value": "10.48550/arXiv.2609.04336",
-      "url": "https://doi.org/10.48550/arXiv.2609.04336"
     }
   ],
   "sameAs": [
+    "https://aclanthology.org/2026.findings-emnlp.1320/",
     "https://arxiv.org/abs/2609.04336"
   ],
   "creator": {
@@ -699,16 +703,23 @@
     </div>
     <p class="pub-meta"><span class="affil-mark">¹</span>University of Texas at San Antonio (UTSA)</p>
     <p class="pub-meta" style="margin-top:-0.6rem;">
-      <strong>The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)</strong><br>
+      <strong>Findings of the Association for Computational Linguistics: EMNLP 2026</strong><br>
       Findings Paper
     </p>
 
     <div class="publication-links">
       <span class="link-block">
-        <a href="https://arxiv.org/pdf/2609.04336.pdf" target="_blank" rel="noopener"
+        <a href="https://aclanthology.org/2026.findings-emnlp.1320/" target="_blank" rel="noopener"
            class="external-link button is-normal is-rounded is-dark">
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
           <span>Paper</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="https://arxiv.org/abs/2609.04336" target="_blank" rel="noopener"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon"><i class="ai ai-arxiv"></i></span>
+          <span>arXiv</span>
         </a>
       </span>
       <span class="link-block">
@@ -1030,14 +1041,25 @@
     </div>
     <div class="bibtex-box">
       <button type="button" class="pub-copy-btn" aria-label="Copy BibTeX" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
-      <pre id="bibtex-code"><code>@misc{nourbakhsh2026medprobprobinginternalrepresentations,
-  title={MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering},
-  author={Erfan Nourbakhsh and Ke Yang and Anthony Rios},
-  year={2026},
-  eprint={2609.04336},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2609.04336},
+      <pre id="bibtex-code"><code>@inproceedings{nourbakhsh-etal-2026-medprob,
+    title = "{M}ed{P}rob: Probing Internal Representations of Vision-Language Models for Medical Question Answering",
+    author = "Nourbakhsh, Erfan  and
+      Yang, Ke  and
+      Rios, Anthony",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-emnlp.1320/",
+    doi = "10.18653/v1/2026.findings-emnlp.1320",
+    pages = "27961--27999",
+    ISBN = "979-8-89176-462-0",
+    abstract = "Medical visual question answering (Med-VQA) is often assumed to require medical fine-tuning, large models, or complex multi-agent pipelines. We revisit this assumption with \textbf{MedProb}, a lightweight probing framework that predicts multiple-choice Med-VQA answers from frozen VLM representations without free-text generation. Across PATH-VQA, SLAKE, and VQA-RAD, MedProb recovers substantially more answer-relevant signal than prompting and performs stronger than medical VLMs and agentic systems. Probing also reduces the apparent gap between small and large models compared to prompting, suggesting that smaller VLMs contain more recoverable Med-VQA signal than generation-based evaluation reveals. Across 14 matched general-purpose and medical VLM pairs, medical adaptation does not consistently improve this linear decodability."
 }</code></pre>
     </div>
   </div>
